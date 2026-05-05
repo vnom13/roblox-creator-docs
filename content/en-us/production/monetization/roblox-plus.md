@@ -17,7 +17,7 @@ For more information about the benefits of Roblox Plus to end-users, see the [he
 As a creator, you can earn from Roblox Plus subscribers through:
 
 - [**In-game Robux purchases**](#earn-from-in-experience-purchases): Subscribers receive a 10–20% discount on purchases, which is covered by Roblox so that your earnings per purchase are not reduced. Lower prices can encourage more frequent purchases, helping increase your overall revenue.
-- [**Driving Plus sign-ups**](#earn-from-in-experience-plus-subscriptions): Encourage engaged users to subscribe to Roblox Plus directly from your game using `Class.MarketplaceService.PromptRobloxSubscriptionPurchase|PromptRobloxSubscriptionPurchase`. You can earn up to 750 Robux for each new subscriber you bring in.
+- [**Driving Plus sign-ups**](#earn-from-in-experience-plus-subscriptions): Encourage engaged users to subscribe to Roblox Plus directly from your game using `Class.MarketplaceService.PromptRobloxSubscriptionPurchase|PromptRobloxSubscriptionPurchase`. You can earn up to 750 Robux for each new subscriber you bring in, with earnings starting once the subscription becomes paid (free trial periods are not included).
 - [**Time spent in paid private servers**](#earn-from-paid-private-server-time): Earn up to 100 Robux per subscriber when they spend at least 60 minutes in your paid private servers each month.
 - [**In-game Robux transfers**](#earn-from-robux-transfers): Earn 10% every time a Plus subscriber sends Robux to another user within your game using `Class.MarketplaceService.PromptRobuxTransferAsync|PromptRobuxTransferAsync`. This amount is eligible for the DevEx program.
 
