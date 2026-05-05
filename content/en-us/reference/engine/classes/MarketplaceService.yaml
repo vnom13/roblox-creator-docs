@@ -39,32 +39,6 @@ tags:
 deprecation_message: ''
 properties: []
 methods:
-  - name: MarketplaceService:BindReceiptHandler
-    summary: ''
-    description: ''
-    code_samples: []
-    parameters:
-      - name: transactionType
-        type: ReceiptType
-        default:
-        summary: ''
-      - name: handler
-        type: Function
-        default:
-        summary: ''
-      - name: filter
-        type: Array?
-        default:
-        summary: ''
-    returns:
-      - type: RBXScriptConnection
-        summary: ''
-    tags: []
-    deprecation_message: ''
-    security: None
-    thread_safety: Unsafe
-    capabilities:
-      - Monetization
   - name: MarketplaceService:GetDeveloperProductsAsync
     summary: |
       Returns a `Class.Pages` object which contains information for all of the
@@ -1341,33 +1315,6 @@ methods:
     thread_safety: Unsafe
     capabilities:
       - PromptExternalPurchase
-  - name: MarketplaceService:PromptRobuxTransferAsync
-    summary: ''
-    description: ''
-    code_samples: []
-    parameters:
-      - name: sender
-        type: Player
-        default:
-        summary: ''
-      - name: receiverUserId
-        type: int64
-        default:
-        summary: ''
-      - name: amount
-        type: int64
-        default:
-        summary: ''
-    returns:
-      - type: string
-        summary: ''
-    tags: &ref_0
-      - Yields
-    deprecation_message: ''
-    security: None
-    thread_safety: Unsafe
-    capabilities:
-      - PromptExternalPurchase
   - name: MarketplaceService:PromptSubscriptionPurchase
     summary: |
       Prompts a user to purchase a subscription for the given `subscriptionId`.
@@ -1448,7 +1395,8 @@ methods:
           A string `transferRequestId` that uniquely identifies this transfer
           request. Use this ID to correlate with receipts delivered through
           `Class.MarketplaceService:BindReceiptHandler()|BindReceiptHandler`.
-    tags: *ref_0
+    tags:
+      - Yields
     deprecation_message: ''
     security: None
     thread_safety: Unsafe
