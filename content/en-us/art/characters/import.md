@@ -3,7 +3,7 @@ title: Import character bodies
 description: Use the Importer to add third-party models to Studio before testing, using, or uploading the character model.
 ---
 
-Studio's 3D Importer lets you import 3D assets into your projects, such as avatar clothing, accessories, and character bodies. The following instructions provide guidance on how to import a full character model into Studio as a `Model` object that you can save to use in your experience, share with others, or upload to the Marketplace.
+Studio's Importer lets you import 3D assets into your projects, such as avatar clothing, accessories, and character bodies. The following instructions provide guidance on how to import a full character model into Studio as a `Model` object that you can save to use in your experience, share with others, or upload to the Marketplace.
 
 <Alert severity ='info'>
 If you are using a single-mesh character body for the Roblox Auto-Setup tool, see [Avatar auto-setup](../../avatar-setup/).

@@ -9,7 +9,7 @@ The Scene Analysis tool provides a suite of views in Roblox Studio that give you
 
 ## Enable Scene Analysis
 
-1. Enable the **Scene Analysis** beta feature in **File** > **Beta Features**.
+1. Enable **Scene Analysis** in **File** > **Beta Features**.
 1. In the menu bar, select **Window** > **Performance Summary** > **Scene Analysis**.
 
 ## Use Scene Analysis
@@ -26,7 +26,7 @@ Scene Analysis has many different modes, each of which caters to a different use
 
 ### Script memory
 
-This view shows how much memory each `Class.Script`, `Class.LocalScript`, and `Class.ModuleScript` is using in the Luau system. This is the memory used by tables and other script allocations, not the memory used by assets such as animations, textures, and sounds. The view is further broken down by the common locations from which scripts are executed, and by `Class.Script` versus `Class.ModuleScript`.
+This view shows how much memory each `Class.Script`, `Class.LocalScript`, and `Class.ModuleScript` is using in the Luau VM. This is the memory used by tables and other script allocations, not the memory used by assets such as animations, textures, and sounds. The view is further broken down by the common locations from which scripts are executed and by `Class.Script` versus `Class.ModuleScript`.
 
 ### Unparented instances
 
@@ -34,21 +34,21 @@ The unparented instances view shows which scripts and modules are holding refere
 
 Scripts holding references to instances is normal and is not, on its own, an indication of a bug or memory leak. However, if you're investigating a memory leak, this view makes it easy to spot whether a script is doing something you didn't expect.
 
-If you're still stuck tracking down a memory leak, this tool is complementary to the Developer Console's Heap Memory Profiler, which can show you more information about individual allocations.
+If you're still having trouble finding the root cause of a memory leak, this tool is complementary to the [Luau heap](../studio/optimization/memory-usage.md#luau-heap) tool, which can show you more information about individual allocations.
 
 Right-click any script in this view to select it directly in the Explorer.
 
 ### Instance composition
 
-The instance composition view gives you an overall view of which instances are currently present on the client or server. This is invaluable when working on large and complex builds, as each instance has both replication and memory costs.
+The instance composition view shows which instances are currently present on the client or server. This is invaluable when working on large and complex builds, as each instance has both replication and memory costs.
 
-The categorizations, such as Characters, Geometry, and Textures, are designed to help you understand how your scene is balanced. For example, perhaps you didn't mean to have 25,000 particle emitters, but this view lets you know.
+The categories, such as Characters, Geometry, and Textures, are designed to help you understand how your scene is balanced. For example, perhaps you didn't mean to have 25,000 particle emitters, but this view lets you know.
 
 This view also makes it easy to select all instances of a given type.
 
 ### Audio memory
 
-The audio memory view shows how much memory each audio asset is currently consuming. The actual memory used by a given audio track is somewhat complex, but in practical terms, deleting all instances that refer to an audio track allows that memory to unload.
+The audio memory view shows how much memory each audio asset is currently consuming. The actual memory used by a given audio track is quite complex, but in practical terms, deleting all instances that refer to an audio track allows that memory to unload.
 
 Right-click any audio asset in this view to select all the instances that are using it.
 
