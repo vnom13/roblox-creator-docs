@@ -194,6 +194,7 @@ methods:
     thread_safety: Unsafe
     capabilities:
       - Animation
+    simulationAccess: true
   - name: Animator:LoadAnimation
     summary: |
       Loads an `Class.Animation` onto an `Animator`, returning an
@@ -221,8 +222,8 @@ methods:
       #### Loading an Animation on Client or Server
 
       In order for `Class.AnimationTrack|AnimationTracks` to replicate
-      correctly, it's important to know when they should be loaded on the client or on
-      the server:
+      correctly, it's important to know when they should be loaded on the client
+      or on the server:
 
       - If an `Animator` is a descendant of a `Class.Humanoid` or
         `Class.AnimationController` in a player's `Class.Player.Character`,
@@ -241,7 +242,8 @@ methods:
       - name: animation
         type: Animation
         default:
-        summary: The `Class.Animation` to be used.
+        summary: |
+          The `Class.Animation` to be used.
     returns:
       - type: AnimationTrack
         summary: ''
@@ -271,7 +273,7 @@ methods:
     capabilities:
       - Animation
   - name: Animator:StepAnimations
-    summary: |-
+    summary: |
       Increments the `Class.AnimationTrack.TimePosition` of all playing
       `Class.AnimationTrack|AnimationTracks` that are loaded onto the
       `Animator`, applying the offsets to the model associated with the

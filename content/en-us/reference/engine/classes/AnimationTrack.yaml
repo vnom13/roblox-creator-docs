@@ -5,8 +5,9 @@
 name: AnimationTrack
 type: class
 memory_category: Animation
-summary: Controls the playback of an animation on an `Class.Animator`.
-description: |-
+summary: |
+  Controls the playback of an animation on an `Class.Animator`.
+description: |
   Controls the playback of an animation on an `Class.Animator`. This object
   cannot be created, instead it is returned by the
   `Class.Animator:LoadAnimation()` method.
@@ -19,10 +20,10 @@ tags:
 deprecation_message: ''
 properties:
   - name: AnimationTrack.Animation
-    summary: |-
+    summary: |
       The `Class.Animation` object that was used to create this
       `Class.AnimationTrack`.
-    description: |-
+    description: |
       The `Class.Animation` object that was used to create this
       `Class.AnimationTrack`. To create an `Class.AnimationTrack`, you must load
       an `Class.Animation` object onto an `Class.Animator` using the
@@ -45,10 +46,10 @@ properties:
     capabilities:
       - Animation
   - name: AnimationTrack.IsPlaying
-    summary: |-
+    summary: |
       A read-only property that returns true when the `Class.AnimationTrack` is
       playing.
-    description: |-
+    description: |
       A read-only property that returns true when the `Class.AnimationTrack` is
       playing.
 
@@ -76,11 +77,11 @@ properties:
       - Animation
     simulationAccess: true
   - name: AnimationTrack.Length
-    summary: |-
+    summary: |
       A read-only property that returns the length (in seconds) of an
       `Class.AnimationTrack`. This will return `0` until the animation has fully
       loaded and thus may not be immediately available.
-    description: |-
+    description: |
       A read-only property that returns the length (in seconds) of an
       `Class.AnimationTrack`. This will return `0` until the animation has fully
       loaded and thus may not be immediately available.
@@ -106,10 +107,10 @@ properties:
     capabilities:
       - Animation
   - name: AnimationTrack.Looped
-    summary: |-
+    summary: |
       Sets whether the animation will repeat after finishing. If it is changed
       while playing the result will take effect after the animation finishes.
-    description: |-
+    description: |
       This property sets whether the animation will repeat after finishing. If
       it is changed while playing the result will take effect after the
       animation finishes.
@@ -138,12 +139,12 @@ properties:
       - Animation
     simulationAccess: true
   - name: AnimationTrack.Priority
-    summary: |-
+    summary: |
       Sets the priority of an `Class.AnimationTrack`. Depending on what this is
       set to, playing multiple animations at once will look to this property to
       figure out which `Class.Keyframe` `Class.Pose|Poses` should be played over
       one another.
-    description: |-
+    description: |
       This property sets the priority of an `Class.AnimationTrack`. Depending on
       what this is set to, playing multiple animations at once will look to this
       property to figure out which `Class.Keyframe` poses should be played over
@@ -180,10 +181,10 @@ properties:
       - Animation
     simulationAccess: true
   - name: AnimationTrack.Speed
-    summary: |-
+    summary: |
       Read-only property that gives the current playback speed of the
       `Class.AnimationTrack`.
-    description: |-
+    description: |
       This read-only property gives the current playback speed of the
       `Class.AnimationTrack`. When equal to `1`, the amount of time an animation
       takes to complete is equal to `Class.AnimationTrack.Length`, in seconds.
@@ -211,11 +212,11 @@ properties:
       - Animation
     simulationAccess: true
   - name: AnimationTrack.TimePosition
-    summary: |-
+    summary: |
       Returns the position in time in seconds that an `Class.AnimationTrack` is
       through playing its source animation. Can be set to make the track jump to
       a specific moment in the animation.
-    description: |-
+    description: |
       Returns the position in time in seconds that an `Class.AnimationTrack` is
       through playing its source animation. Can be set to make the track jump to
       a specific moment in the animation, but the `Class.AnimationTrack` must be
@@ -240,10 +241,10 @@ properties:
       - Animation
     simulationAccess: true
   - name: AnimationTrack.WeightCurrent
-    summary: |-
+    summary: |
       Read-only property that gives the current weight of the
       `Class.AnimationTrack`.
-    description: |-
+    description: |
       When weight is set in an `Class.AnimationTrack` it does not change
       instantaneously but moves from `Class.AnimationTrack.WeightCurrent` to
       `Class.AnimationTrack.WeightTarget`. The time it takes to do this is
@@ -276,10 +277,10 @@ properties:
       - Animation
     simulationAccess: true
   - name: AnimationTrack.WeightTarget
-    summary: |-
+    summary: |
       Read-only property that gives the current weight of the
       `Class.AnimationTrack`.
-    description: |-
+    description: |
       This read-only property gives the current weight of the
       `Class.AnimationTrack`. It has a default value of `1` and is set when
       `Class.AnimationTrack:Play()`, `Class.AnimationTrack:Stop()` or
@@ -317,11 +318,11 @@ properties:
     simulationAccess: true
 methods:
   - name: AnimationTrack:AdjustSpeed
-    summary: |-
+    summary: |
       Changes the `Class.AnimationTrack.Speed` of an animation. A positive value
       for speed plays the animation forward, a negative one plays it backwards,
       and `0` pauses it.
-    description: |-
+    description: |
       This method changes the `Class.AnimationTrack.Speed` of an animation. A
       positive value for speed plays the animation forward, a negative one plays
       it backwards, and `0` pauses it.
@@ -342,7 +343,8 @@ methods:
       - name: speed
         type: float
         default: 1
-        summary: The playback speed the animation is to be changed to.
+        summary: |
+          The playback speed the animation is to be changed to.
     returns:
       - type: ()
         summary: ''
@@ -355,11 +357,11 @@ methods:
       - Animation
     simulationAccess: true
   - name: AnimationTrack:AdjustWeight
-    summary: |-
+    summary: |
       Changes the weight of an animation, with the optional `fadeTime` parameter
       determining how long it takes for `Class.AnimationTrack.WeightCurrent` to
       reach `Class.AnimationTrack.WeightTarget`.
-    description: |-
+    description: |
       Changes the weight of an animation, with the optional `fadeTime` parameter
       determining how long it takes for `Class.AnimationTrack.WeightCurrent` to
       reach `Class.AnimationTrack.WeightTarget`.
@@ -385,11 +387,12 @@ methods:
       - name: weight
         type: float
         default: 1
-        summary: The weight the animation is to be changed to.
+        summary: |
+          The weight the animation is to be changed to.
       - name: fadeTime
         type: float
         default: 0.100000001
-        summary: |-
+        summary: |
           The duration of time that the animation will fade between the old
           weight and the new weight for.
     returns:
@@ -404,10 +407,10 @@ methods:
       - Animation
     simulationAccess: true
   - name: AnimationTrack:GetMarkerReachedSignal
-    summary: |-
+    summary: |
       Returns an `Datatype.RBXScriptSignal` (event) that fires when a specified
       `Class.KeyframeMarker` has been hit in an `Class.Animation|animation`.
-    description: |-
+    description: |
       This method returns an `Datatype.RBXScriptSignal` (event) similar to the
       `Class.AnimationTrack.KeyframeReached` event, except it only fires when a
       specified `Class.KeyframeMarker` has been hit in an
@@ -433,12 +436,12 @@ methods:
       - name: name
         type: string
         default:
-        summary: |-
+        summary: |
           The name of the `Class.KeyframeMarker` the signal is being created
           for. Not to be confused with the name of the `Class.Keyframe`.
     returns:
       - type: RBXScriptSignal
-        summary: |-
+        summary: |
           The signal created and fired when the animation reaches the created
           `Class.KeyframeMarker`.
     tags: []
@@ -512,10 +515,10 @@ methods:
     capabilities:
       - Animation
   - name: AnimationTrack:GetTimeOfKeyframe
-    summary: |-
+    summary: |
       Returns the time position of the first `Class.Keyframe` of the given name
       in an `Class.AnimationTrack`.
-    description: |-
+    description: |
       Returns the time position of the first `Class.Keyframe` of the given name
       in an `Class.AnimationTrack`. If multiple `Class.Keyframe|Keyframes` share
       the same name, it will return the earliest one in the animation.
@@ -534,10 +537,11 @@ methods:
       - name: keyframeName
         type: string
         default:
-        summary: The name associated with the `Class.Keyframe` to be found.
+        summary: |
+          The name associated with the `Class.Keyframe` to be found.
     returns:
       - type: double
-        summary: |-
+        summary: |
           The time, in seconds, the `Class.Keyframe` occurs at normal playback
           speed.
     tags: []
@@ -547,10 +551,10 @@ methods:
     capabilities:
       - Animation
   - name: AnimationTrack:Play
-    summary: |-
+    summary: |
       Plays the `Class.AnimationTrack`. Once called an `Class.AnimationTrack`
       will play with the specified `fadeTime`, weight and speed.
-    description: |-
+    description: |
       When `Class.AnimationTrack:Play()` is called the track's animation will
       begin playing and the weight of the animation will increase from `0` to
       the specified `weight` (defaults to `1`) over the specified `fadeTime`.
@@ -576,17 +580,19 @@ methods:
       - name: fadeTime
         type: float
         default: 0.100000001
-        summary: |-
+        summary: |
           The duration of time that the animation's weight should be faded in
           for.
       - name: weight
         type: float
         default: 1
-        summary: The weight the animation is to be played at.
+        summary: |
+          The weight the animation is to be played at.
       - name: speed
         type: float
         default: 1
-        summary: The playback speed of the animation.
+        summary: |
+          The playback speed of the animation.
     returns:
       - type: ()
         summary: ''
@@ -643,14 +649,15 @@ methods:
     capabilities:
       - Animation
   - name: AnimationTrack:Stop
-    summary: Stops the `Class.AnimationTrack`.
-    description: |-
-      Stops the `Class.AnimationTrack`. Once called, the weight of the animation will
-      move towards zero over a length of time specified by the optional `fadeTime`
-      parameter. For example, if `Stop()` is called with a `fadeTime` of `2`, it will
-      take two seconds for the weight of the track to reach zero and its effects
-      completely end. Please note this will be the case regardless of the initial
-      weight of the animation.
+    summary: |
+      Stops the `Class.AnimationTrack`.
+    description: |
+      Stops the `Class.AnimationTrack`. Once called, the weight of the animation
+      will move towards zero over a length of time specified by the optional
+      `fadeTime` parameter. For example, if `Stop()` is called with a `fadeTime`
+      of `2`, it will take two seconds for the weight of the track to reach zero
+      and its effects completely end. Please note this will be the case
+      regardless of the initial weight of the animation.
 
       #### Usage Notes
 
@@ -672,7 +679,7 @@ methods:
       - name: fadeTime
         type: float
         default: 0.100000001
-        summary: |-
+        summary: |
           The time, in seconds, for which animation weight is to be faded out
           over.
     returns:
@@ -688,10 +695,10 @@ methods:
     simulationAccess: true
 events:
   - name: AnimationTrack.DidLoop
-    summary: |-
+    summary: |
       Fires when an `Class.AnimationTrack` loops on the next update following
       the end of the previous animation loop.
-    description: |-
+    description: |
       This event fires whenever a looped `Class.AnimationTrack` completes a
       loop, on the next update.
 
@@ -706,10 +713,10 @@ events:
     capabilities:
       - Animation
   - name: AnimationTrack.Ended
-    summary: |-
+    summary: |
       Fires when the `Class.AnimationTrack` is completely done moving anything
       in the world.
-    description: |-
+    description: |
       Fires when the `Class.AnimationTrack` is completely done moving anything
       in the world, meaning the animation has finished playing, the "fade out"
       is finished, and the subject is in a neutral pose.
@@ -726,10 +733,10 @@ events:
     capabilities:
       - Animation
   - name: AnimationTrack.KeyframeReached
-    summary: |-
+    summary: |
       Fires every time playback of an `Class.AnimationTrack` reaches a
       `Class.Keyframe` that does not have the default name of `Keyframe`.
-    description: |-
+    description: |
       Fires every time playback of an `Class.AnimationTrack` reaches a
       `Class.Keyframe` that does not have the default name of `Keyframe`. This
       event lets you run code at predefined points in an animation (set by
@@ -748,21 +755,22 @@ events:
       - name: keyframeName
         type: string
         default:
-        summary: The name of the `Class.Keyframe` reached.
+        summary: |
+          The name of the `Class.Keyframe` reached.
     tags: []
-    deprecation_message: |-
+    deprecation_message: |
       This event has been superseded by the
       `Class.AnimationTrack:GetMarkerReachedSignal()` method.
     security: None
     capabilities:
       - Animation
   - name: AnimationTrack.Stopped
-    summary: |-
+    summary: |
       Fires when the `Class.AnimationTrack` finishes playing. The AnimationTrack
       might still animate the subject while the animation "fades out". To catch
       when the AnimationTrack is completely done moving anything in the world,
       use the `Class.AnimationTrack.Ended` event.
-    description: |-
+    description: |
       Fires whenever the `Class.AnimationTrack` finishes playing.
 
       This event has a number of uses. It can be used to wait until an
