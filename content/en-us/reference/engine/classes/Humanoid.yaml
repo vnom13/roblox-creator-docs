@@ -5,9 +5,8 @@
 name: Humanoid
 type: class
 memory_category: Instances
-summary: |
-  A special object that gives models the functionality of a character.
-description: |
+summary: A special object that gives models the functionality of a character.
+description: |-
   The Humanoid is a special object that gives models the functionality of a
   character. It grants the model with the ability to physically walk around and
   interact with various components of a Roblox experience. Humanoids are always
@@ -53,10 +52,10 @@ tags: []
 deprecation_message: ''
 properties:
   - name: Humanoid.AutoJumpEnabled
-    summary: |
+    summary: |-
       Sets whether the character will automatically jump when they hit an
       obstacle as a player on a mobile device.
-    description: |
+    description: |-
       AutoJumpEnabled sets whether or not the `Class.Humanoid` will attempt to
       automatically jump over an obstacle it is walking towards.
 
@@ -87,11 +86,11 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.AutomaticScalingEnabled
-    summary: |
+    summary: |-
       When Enabled, AutomaticScalingEnabled causes the size of the character to
       change in response to the values in the humanoid's child scale values
       changing.
-    description: |
+    description: |-
       The Humanoid has six child scale values including `BodyDepthScale`,
       `BodyHeightScale`, `BodyProportionScale`, `BodyTypeScale`,
       `BodyWidthScale`, `HeadScale`. Changing the value of any of these causes
@@ -112,10 +111,10 @@ properties:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.AutoRotate
-    summary: |
+    summary: |-
       AutoRotate sets whether or not the Humanoid will automatically rotate to
       face in the direction they are moving in.
-    description: |
+    description: |-
       The AutoRotate property describes whether or not the Humanoid will
       automatically rotate to face in the direction they are moving. When set to
       true, the character model will gradually turn to face their movement
@@ -168,10 +167,10 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.BreakJointsOnDeath
-    summary: |
+    summary: |-
       Determines whether the humanoid's joints break when in the
       `Enum.HumanoidStateType.Dead` state.
-    description: |
+    description: |-
       Determines whether the humanoid's joints break when in the
       `Enum.HumanoidStateType.Dead` state. Defaults to true.
     code_samples: []
@@ -189,10 +188,10 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.CameraOffset
-    summary: |
+    summary: |-
       An offset applied to the Camera's subject position when its CameraSubject
       is set to this Humanoid.
-    description: |
+    description: |-
       The CameraOffset property specifies an offset to the camera's subject
       position when its `Class.Camera.CameraSubject` is set to this
       `Class.Humanoid`.
@@ -217,10 +216,10 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.CollisionType
-    summary: |
+    summary: |-
       Selects the `Enum.HumanoidCollisionType` for R15 and Rthro non-player
       characters.
-    description: |
+    description: |-
       This property selects the `Enum.HumanoidCollisionType` for R15 and Rthro
       non-player characters.
     code_samples: []
@@ -238,9 +237,8 @@ properties:
       can_save: true
     capabilities: []
   - name: Humanoid.DisplayDistanceType
-    summary: |
-      Controls the distance behavior of the humanoid's name and health display.
-    description: |
+    summary: Controls the distance behavior of the humanoid's name and health display.
+    description: |-
       The **DisplayDistanceType** property controls the distance behavior of the
       humanoid's name and health display. This property is set using the
       `Enum.HumanoidDisplayDistanceType` enum with three available values, each
@@ -275,9 +273,8 @@ properties:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.DisplayName
-    summary: |
-      Sets the text of a Humanoid, displayed above their head.
-    description: |
+    summary: Sets the text of a Humanoid, displayed above their head.
+    description: |-
       `DisplayName` is a property that determines the Humanoid's name display
       when visible. By default, a new Humanoid will have the value of an empty
       string. If `DisplayName` is an empty string, the humanoid's name display
@@ -286,9 +283,9 @@ properties:
       #### Player Character Loading
 
       When players load their character, either automatically or through the use
-      of `Class.Player:LoadCharacterAsync()|LoadCharacterAsync()`, the Humanoid
-      that is created by the engine will have its `DisplayName` property set to
-      the player's `DisplayName` property.
+      of `Class.Player:LoadCharacterAsync()|LoadCharacterAsync()`, the Humanoid that is
+      created by the engine will have its `DisplayName` property set to the
+      player's `DisplayName` property.
 
       #### StarterCharacter and StarterHumanoid
 
@@ -314,9 +311,8 @@ properties:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.EvaluateStateMachine
-    summary: |
-      Used to disable the internal physics and state machine of the Humanoid.
-    description: |
+    summary: Used to disable the internal physics and state machine of the Humanoid.
+    description: |-
       Used to disable the internal physics and state machine of the `Humanoid`.
 
       #### What does turning this off do?
@@ -361,13 +357,12 @@ properties:
       can_save: true
     capabilities:
       - AvatarBehavior
-    simulationAccess: true
   - name: Humanoid.FloorMaterial
-    summary: |
+    summary: |-
       Describes the `Enum.Material` that the `Class.Humanoid` is currently
       standing on. If the `Class.Humanoid` isn't standing on anything, the value
       of this property will be _Air_.
-    description: |
+    description: |-
       This is a read-only property that describes the `Enum.Material` the
       `Class.Humanoid` is currently standing on. It works with both regular
       `Class.BasePart|Parts` and `Class.Terrain` voxels.
@@ -416,10 +411,10 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.Health
-    summary: |
+    summary: |-
       Describes the current health of the Humanoid on the range [0,
       `Class.Humanoid.MaxHealth`].
-    description: |
+    description: |-
       This property represents the current health of the `Class.Humanoid`. The
       value is restricted to the range between 0 and
       `Class.Humanoid.MaxHealth|MaxHealth`. If the humanoid is dead, this
@@ -473,11 +468,11 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.HealthDisplayDistance
-    summary: |
+    summary: |-
       Used in conjunction with the
       `Class.Humanoid.DisplayDistanceType|DisplayDistanceType` property to
       control the distance from which a humanoid's health bar can be seen.
-    description: |
+    description: |-
       This property is a number used in conjunction with the
       `Class.Humanoid.DisplayDistanceType|DisplayDistanceType` property to
       control the distance from which a humanoid's health bar can be seen.
@@ -501,9 +496,8 @@ properties:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.HealthDisplayType
-    summary: |
-      Controls when the humanoid's health bar is allowed to be displayed.
-    description: |
+    summary: Controls when the humanoid's health bar is allowed to be displayed.
+    description: |-
       This property controls when a humanoid's health bar is allowed to be
       displayed. By default, this property is set to
       `Enum.HumanoidHealthDisplayType|DisplayWhenDamaged`, which makes the
@@ -541,10 +535,10 @@ properties:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.HipHeight
-    summary: |
+    summary: |-
       Determines the distance off the ground the `Class.Humanoid.RootPart`
       should be.
-    description: |
+    description: |-
       Determines the distance (in studs) off the ground the
       `Class.Humanoid.RootPart|RootPart` should be when the humanoid is
       standing. The `Class.Humanoid.RigType|RigType` influences the way this
@@ -582,9 +576,8 @@ properties:
       - AvatarAppearance
     simulationAccess: true
   - name: Humanoid.Jump
-    summary: |
-      If `true`, the `Class.Humanoid` jumps with an upwards force.
-    description: |
+    summary: If `true`, the `Class.Humanoid` jumps with an upwards force.
+    description: |-
       If `true`, the `Class.Humanoid` jumps with an upwards force equal to the
       value of `Class.Humanoid.JumpPower` or the height of
       `Class.Humanoid.JumpHeight`, depending on the value of
@@ -606,9 +599,8 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.JumpHeight
-    summary: |
-      Provides control over the height that the `Class.Humanoid` jumps to.
-    description: |
+    summary: Provides control over the height that the `Class.Humanoid` jumps to.
+    description: |-
       Provides control over the height a `Class.Humanoid` jumps, in studs. The
       starting value of this property is determined by the value of
       `Class.StarterPlayer.CharacterJumpHeight` which defaults to 7.2.
@@ -620,8 +612,8 @@ properties:
 
       This property is only visible in the
       [Properties](../../../studio/properties.md) window if
-      `Class.Humanoid.UseJumpPower` is set to **false**, as it is not relevant
-      otherwise (instead, `Class.Humanoid.JumpPower` is used).
+      `Class.Humanoid.UseJumpPower` is set to **false**, as it is not
+      relevant otherwise (instead, `Class.Humanoid.JumpPower` is used).
     code_samples: []
     type: float
     tags: []
@@ -638,10 +630,10 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.JumpPower
-    summary: |
+    summary: |-
       Determines how much upwards force is applied to the `Class.Humanoid` when
       jumping.
-    description: |
+    description: |-
       Determines how much upwards force is applied to the `Class.Humanoid` when
       jumping. The starting value of this property is determined by the value of
       `Class.StarterPlayer.CharacterJumpPower` which defaults to 50 and is
@@ -656,8 +648,8 @@ properties:
 
       This property is only visible in the
       [Properties](../../../studio/properties.md) window if
-      `Class.Humanoid.UseJumpPower` is set to **true**, as it is not relevant
-      otherwise (instead, `Class.Humanoid.JumpHeight` is used).
+      `Class.Humanoid.UseJumpPower` is set to **true**, as it is not
+      relevant otherwise (instead, `Class.Humanoid.JumpHeight` is used).
     code_samples: []
     type: float
     tags: []
@@ -674,9 +666,8 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.LeftLeg
-    summary: |
-      A reference to the humanoid's _Left Leg_ part.
-    description: |
+    summary: A reference to the humanoid's _Left Leg_ part.
+    description: |-
       A reference to the humanoid's _Left Leg_ part. The value of this property
       will always be `nil` if the humanoid's `Enum.RigType` is set to R15.
     code_samples: []
@@ -685,7 +676,7 @@ properties:
       - Hidden
       - NotReplicated
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This instance only works with the old R6 rig. It will not work with the
       R15 rig and should not be used in new work not using the R6 rig.
     security:
@@ -699,9 +690,8 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.MaxHealth
-    summary: |
-      The maximum value of a humanoid's `Class.Humanoid.Health|Health`.
-    description: |
+    summary: The maximum value of a humanoid's `Class.Humanoid.Health|Health`.
+    description: |-
       The maximum value of a humanoid's `Class.Humanoid.Health|Health`.
 
       The value of this property is used alongside the
@@ -732,7 +722,7 @@ properties:
     tags:
       - NotReplicated
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This deprecated property is a variant of `Class.Humanoid.MaxHealth` which
       should be used instead.
     security:
@@ -746,9 +736,8 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.MaxSlopeAngle
-    summary: |
-      The maximum slope angle that a humanoid can walk on without slipping.
-    description: |
+    summary: The maximum slope angle that a humanoid can walk on without slipping.
+    description: |-
       This property determines the maximum slope angle that a humanoid can
       climb. If the angle of a slope is greater than a humanoid's MaxSlopeAngle,
       they will slide down the slope.
@@ -775,9 +764,8 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.MoveDirection
-    summary: |
-      Describes the direction that the `Class.Humanoid` is walking in.
-    description: |
+    summary: Describes the direction that the `Class.Humanoid` is walking in.
+    description: |-
       **MoveDirection** is a read-only property that describes the direction a
       `Class.Humanoid` is walking in, as a unit vector or zero length vector.
       The direction is described in world space.
@@ -803,10 +791,10 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.NameDisplayDistance
-    summary: |
+    summary: |-
       Used in conjunction with the `Class.Humanoid.DisplayDistanceType` property
       to control the distance from which a humanoid's name can be seen.
-    description: |
+    description: |-
       The **NameDisplayDistance** property is a number used in conjunction with
       the `Class.Humanoid.DisplayDistanceType` property to control the distance
       from which a humanoid's name can be seen.
@@ -830,10 +818,10 @@ properties:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.NameOcclusion
-    summary: |
+    summary: |-
       Controls whether a humanoid's name and health bar can be seen behind walls
       or other objects.
-    description: |
+    description: |-
       Controls whether a humanoid's name and health bar can be seen behind walls
       or other objects. This property is a `Enum.NameOcclusion` value and can be
       configured to occlude all names, enemy names, or disable occlusion
@@ -863,10 +851,10 @@ properties:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.PlatformStand
-    summary: |
+    summary: |-
       Determines whether the `Class.Humanoid` is currently in the
       `Enum.HumanoidStateType.PlatformStanding` state.
-    description: |
+    description: |-
       Determines whether the `Class.Humanoid` is currently in the
       `Enum.HumanoidStateType.PlatformStanding` state. When true, the Humanoid
       is in a state where it is free-falling and cannot move. This state behaves
@@ -887,11 +875,11 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.RequiresNeck
-    summary: |
+    summary: |-
       Allows developers to disable the behavior where a player
       `Character|character` dies if the Neck `Class.Motor6D` is removed or
       disconnected even momentarily.
-    description: |
+    description: |-
       Allows developers to disable the behavior where a player
       `Character|character` dies if the Neck `Class.Motor6D` is removed or
       disconnected even momentarily. This property defaults to true.
@@ -910,9 +898,8 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.RightLeg
-    summary: |
-      A reference to the humanoid's _Right Leg_ part.
-    description: |
+    summary: A reference to the humanoid's _Right Leg_ part.
+    description: |-
       A reference to the humanoid's _Right Leg_ part. The value of this property
       will always be `nil` if the humanoid's RigType is set to R15.
     code_samples: []
@@ -921,7 +908,7 @@ properties:
       - Hidden
       - NotReplicated
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This instance only works with the old R6 rig. It will not work with the
       R15 rig and should not be used in new work not using the R6 rig.
     security:
@@ -935,10 +922,10 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.RigType
-    summary: |
+    summary: |-
       Describes whether this `Class.Humanoid` is utilizing the legacy R6
       character rig, or the new R15 character rig.
-    description: |
+    description: |-
       **RigType** describes whether a `Class.Humanoid` is utilizing the legacy
       R6 character rig, or the newer R15 character rig.
 
@@ -965,31 +952,18 @@ properties:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.RootPart
-    summary: |
-      A reference to the humanoid's `HumanoidRootPart` object.
-    description: |
-      A reference to the humanoid's `HumanoidRootPart` object. The
-      `HumanoidRootPart` is required for all assemblies that include a
-      `Class.Humanoid` and is the primary driving part of the `Class.Humanoid`
-      that controls a humanoid's movement through the 3D world. This part is
-      normally invisible and typically resides in the local origin center of the
-      character model.
+    summary: A reference to the humanoid's `HumanoidRootPart` object.
+    description: |-
+      A reference to the humanoid's `HumanoidRootPart` object. The `HumanoidRootPart` is required for all assemblies that include a `Class.Humanoid` and is the primary driving part of the `Class.Humanoid` that controls a humanoid's movement through the 3D world. This part is normally invisible and typically resides in the local origin center of the character model. 
 
-      The `HumanoidRootPart` is included in all platform-wide avatar characters,
-      and automatically created when a character model is imported into Studio.
-      It's possible to manually add a `HumanoidRootPart` to a model by adding a
-      `Class.Part` named `HumanoidRootPart` and ensuring it's the root part of
-      the assembly.
+      The `HumanoidRootPart` is included in all platform-wide avatar characters, and automatically created when a character model is imported into Studio. It's possible to manually add a `HumanoidRootPart` to a model by adding a `Class.Part` named `HumanoidRootPart` and ensuring it's the root part of the assembly.
 
-      Use this property to reference the specific `HumanoidRootPart` without
-      searching the model hierarchy. You can get or set the `Class.CFrame` of
-      this part to change position or reorient the entire character model.
+      Use this property to reference the specific `HumanoidRootPart` without searching the model hierarchy. You can get or set the `Class.CFrame` of this part to change position or reorient the entire character model.
 
-      For R15 or higher-fidelity characters, the `Class.Model.PrimaryPart` of
-      the `Class.Player.Character` model is also set to `HumanoidRootPart`.
+      For R15 or higher-fidelity characters, the `Class.Model.PrimaryPart` of the
+      `Class.Player.Character` model is also set to `HumanoidRootPart`.
 
-      While R6 characters also include a `HumanoidRootPart`, the R6 characters,
-      `Class.Model.PrimaryPart` is set to the `Head` part.
+      While R6 characters also include a `HumanoidRootPart`, the R6 characters, `Class.Model.PrimaryPart` is set to the `Head` part.
     code_samples: []
     type: BasePart
     tags:
@@ -1008,10 +982,10 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.SeatPart
-    summary: |
+    summary: |-
       A reference to the seat that a `Class.Humanoid` is currently sitting in,
       if any.
-    description: |
+    description: |-
       SeatPart is a reference to the seat that a `Class.Humanoid` is currently
       sitting in, if any. The value of this property can be either a
       `Class.Seat`, or a `Class.VehicleSeat`. It will be _nil_ if the Humanoid
@@ -1039,9 +1013,8 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.Sit
-    summary: |
-      Describes whether the `Class.Humanoid` is currently sitting.
-    description: |
+    summary: Describes whether the `Class.Humanoid` is currently sitting.
+    description: |-
       The Sit property is a boolean that indicates whether the `Class.Humanoid`
       is currently sitting. `Class.Humanoid|Humanoids` can be forced into a
       sitting state by setting this property's value to true. If the
@@ -1071,10 +1044,10 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.TargetPoint
-    summary: |
+    summary: |-
       Describes the 3D position where the `Class.Player` controlling the
       `Class.Humanoid` last clicked in the world while using a `Class.Tool`.
-    description: |
+    description: |-
       **Do not use** This property only works with Experimental Mode enabled,
       which has been entirely discontinued.
 
@@ -1102,9 +1075,8 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.Torso
-    summary: |
-      A reference to a humanoid's root driving part.
-    description: |
+    summary: A reference to a humanoid's root driving part.
+    description: |-
       A reference to a humanoid's root driving part. Contrary to the name of
       this property, it will only point to the Torso part if a humanoid doesn't
       have a HumanoidRootPart.
@@ -1114,7 +1086,7 @@ properties:
       - Hidden
       - NotReplicated
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This instance only works with the old R6 rig. It will not work with the
       R15 rig and should not be used in new work not using the R6 rig.
     security:
@@ -1128,16 +1100,16 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.UseJumpPower
-    summary: |
+    summary: |-
       Determines whether the `Class.Humanoid.JumpHeight|JumpHeight` (false) or
       `Class.Humanoid.JumpPower` (true) property is used.
-    description: |
+    description: |-
       When a character spawns, this property is set according to the value of
       `Class.StarterPlayer.CharacterUseJumpPower`, which defaults to true.
 
-      When jumping, with this set to false, the `Class.Humanoid.JumpHeight`
-      value is used to ensure the humanoid jumps to that height. With this set
-      to true, the `Class.Humanoid.JumpPower` value is used to apply an upward
+      When jumping, with this set to false, the `Class.Humanoid.JumpHeight` value
+      is used to ensure the humanoid jumps to that height. With this set to
+      true, the `Class.Humanoid.JumpPower` value is used to apply an upward
       force.
     code_samples: []
     type: boolean
@@ -1155,13 +1127,12 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.WalkSpeed
-    summary: |
-      Describes the humanoid's maximum movement speed in studs per second.
-    description: |
-      This property describes how quickly the `Class.Humanoid` is able to walk,
-      in studs per second. It defaults to the value of
-      `Class.StarterPlayer.CharacterWalkSpeed` (`16`), meaning a player
-      character can move 16 studs in any direction each second.
+    summary: Describes the humanoid's maximum movement speed in studs per second.
+    description: |-
+      This property describes how quickly the `Class.Humanoid` is able to walk, in
+      studs per second. It defaults to the value of
+      `Class.StarterPlayer.CharacterWalkSpeed` (`16`), meaning a player character can
+      move 16 studs in any direction each second.
 
       #### Notes
 
@@ -1170,11 +1141,11 @@ properties:
         thumbstick is moved just a gradual degree from center.
       - You can freeze a humanoid in place by setting
         `Class.Humanoid.WalkSpeed|WalkSpeed` to `0`, effectively preventing the
-        controlling player from moving it through the default movement
-        mechanisms. Note, however, that `Class.Humanoid.WalkSpeed|WalkSpeed` is
-        a client‑replicated property which can be modified locally, so it should
-        **not** be used as a security mechanism or as the sole method for
-        preventing humanoid movement.
+        controlling player from moving it through the default movement mechanisms.
+        Note, however, that `Class.Humanoid.WalkSpeed|WalkSpeed` is a
+        client‑replicated property which can be modified locally, so it should **not**
+        be used as a security mechanism or as the sole method for preventing humanoid
+        movement.
       - The default animation script scales a humanoid's movement animations
         based on how fast it is moving relative to the default speed of 16
         studs/second.
@@ -1196,27 +1167,26 @@ properties:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid.WalkToPart
-    summary: |
+    summary: |-
       A reference to a part whose position is trying to be reached by a
       humanoid.
-    description: |
-      `WalkToPart` is a reference to a `Class.BasePart` that the humanoid is
-      trying to reach, after having been prompted to do so via the
+    description: |-
+      `WalkToPart` is a reference to a `Class.BasePart` that the humanoid is trying to
+      reach, after having been prompted to do so via the
       `Class.Humanoid:MoveTo()|MoveTo()` method.
 
-      When `WalkToPart` is set and a humanoid is actively trying to reach the
-      part, it will keep updating its `Datatype.Vector3` goal to be the position
-      of the part, plus the `Class.Humanoid.WalkToPoint|WalkToPoint` translated
-      in object space relative to the rotation of the part. This can be
-      described in Luau as:
+      When `WalkToPart` is set and a humanoid is actively trying to reach the part, it
+      will keep updating its `Datatype.Vector3` goal to be the position of the part,
+      plus the `Class.Humanoid.WalkToPoint|WalkToPoint` translated in object space
+      relative to the rotation of the part. This can be described in Luau as:
 
       ```lua
       goal = humanoid.WalkToPart.CFrame:PointToObjectSpace(humanoid.WalkToPoint)
       ```
 
-      Note that simply setting the value of `WalkToPart` is not sufficient to
-      make a humanoid start "following" a part. Call
-      `Class.Humanoid:MoveTo()|MoveTo()` to initiate movement.
+      Note that simply setting the value of `WalkToPart` is not sufficient to make a
+      humanoid start "following" a part. Call `Class.Humanoid:MoveTo()|MoveTo()` to
+      initiate movement.
     code_samples: []
     type: BasePart
     tags: []
@@ -1232,22 +1202,22 @@ properties:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.WalkToPoint
-    summary: |
+    summary: |-
       The position that a humanoid is trying to reach, after a call to
       `Class.Humanoid:MoveTo()` is made.
-    description: |
-      `WalkToPoint` describes the 3D position in space that a humanoid is trying
-      to reach, after having been prompted to do so via the
+    description: |-
+      `WalkToPoint` describes the 3D position in space that a humanoid is trying to
+      reach, after having been prompted to do so via the
       `Class.Humanoid:MoveTo()|MoveTo()` method.
 
-      If a humanoid's `Class.Humanoid.WalkToPart|WalkToPart` is set, the goal is
-      set by transforming `WalkToPoint` relative to the part's position and
-      rotation. Otherwise, the humanoid will try to reach the 3D position
-      specified by `WalkToPoint` directly.
+      If a humanoid's `Class.Humanoid.WalkToPart|WalkToPart` is set, the goal is set by
+      transforming `WalkToPoint` relative to the part's position and rotation.
+      Otherwise, the humanoid will try to reach the 3D position specified by
+      `WalkToPoint` directly.
 
-      Note that simply setting the value of `WalkToPoint` is not sufficient to
-      make a humanoid start moving toward a point. Call
-      `Class.Humanoid:MoveTo()|MoveTo()` to initiate movement.
+      Note that simply setting the value of `WalkToPoint` is not sufficient to make a
+      humanoid start moving toward a point. Call `Class.Humanoid:MoveTo()|MoveTo()` to
+      initiate movement.
     code_samples: []
     type: Vector3
     tags: []
@@ -1265,9 +1235,8 @@ properties:
     simulationAccess: true
 methods:
   - name: Humanoid:AddAccessory
-    summary: |
-      Attaches the specified `Class.Accessory` to the humanoid's parent.
-    description: |
+    summary: Attaches the specified `Class.Accessory` to the humanoid's parent.
+    description: |-
       This method attaches the specified `Class.Accessory` to the humanoid's
       parent.
 
@@ -1295,8 +1264,7 @@ methods:
       - name: accessory
         type: Instance
         default:
-        summary: |
-          The `Class.Accessory` to be attached.
+        summary: The `Class.Accessory` to be attached.
     returns:
       - type: ()
         summary: ''
@@ -1307,9 +1275,8 @@ methods:
     capabilities:
       - AvatarAppearance
   - name: Humanoid:AddCustomStatus
-    summary: |
-      Adds a custom status to the Humanoid.
-    description: |
+    summary: Adds a custom status to the Humanoid.
+    description: |-
       Adds a BoolValue to the Humanoid's _Status_ object, whose name is equal to
       the string passed as the _status_ argument. If the status already exists,
       a new BoolValue will not be created.
@@ -1324,7 +1291,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
@@ -1332,9 +1299,8 @@ methods:
     thread_safety: Unsafe
     capabilities: []
   - name: Humanoid:AddStatus
-    summary: |
-      Adds a BoolValue to the Humanoid's _Status_ object.
-    description: |
+    summary: Adds a BoolValue to the Humanoid's _Status_ object.
+    description: |-
       Adds a BoolValue to the Humanoid's _Status_ object, whose name is equal to
       the name of the _Status_ enum passed as the _status_ argument. If the
       status already exists, a new BoolValue will not be created.
@@ -1349,7 +1315,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
@@ -1357,7 +1323,7 @@ methods:
     thread_safety: Unsafe
     capabilities: []
   - name: Humanoid:ApplyDescription
-    summary: |
+    summary: |-
       Makes the character's look match that of the passed in
       `Class.HumanoidDescription`.
     description: ''
@@ -1366,34 +1332,27 @@ methods:
       - name: humanoidDescription
         type: HumanoidDescription
         default:
-        summary: |
-          The `Class.HumanoidDescription` instance which you want to set the
-          character to match.
+        summary: The `Class.HumanoidDescription` instance which you want to set the character to match.
       - name: assetTypeVerification
         type: AssetTypeVerification
         default: Default
-        summary: |
-          The asset type verification mode.
+        summary: The asset type verification mode.
     returns:
       - type: ()
         summary: ''
     tags:
       - Yields
       - Deprecated
-    deprecation_message: |
-      This method has been superseded by
-      `Class.Humanoid:ApplyDescriptionAsync()|ApplyDescriptionAsync()`.
+    deprecation_message: This method has been superseded by `Class.Humanoid:ApplyDescriptionAsync()|ApplyDescriptionAsync()`.
     security: None
     thread_safety: Unsafe
     capabilities:
       - AvatarAppearance
   - name: Humanoid:ApplyDescriptionAsync
-    summary: |
+    summary: |-
       Makes the character's look match that of the passed in
-      `Class.HumanoidDescription`. If `HumanoidDescription.UseAvatarSettings` is
-      true, the Avatar Settings for the experience will also be applied to the
-      character.
-    description: |
+      `Class.HumanoidDescription`. If `HumanoidDescription.UseAvatarSettings` is true, the Avatar Settings for the experience will also be applied to the character.
+    description: |-
       This yielding method makes the character's look match that of the passed
       in `Class.HumanoidDescription`. A copy of the passed
       `Class.HumanoidDescription` is cached as the `Class.HumanoidDescription`
@@ -1405,8 +1364,8 @@ methods:
       character between calls, then this method may not make the character
       reflect the passed in `Class.HumanoidDescription` accurately. If you want
       to use this method in conjunction with other means of updating the
-      character, `Class.Humanoid:ApplyDescriptionResetAsync()` will always
-      ensure the character reflects the passed in `Class.HumanoidDescription`.
+      character, `Class.Humanoid:ApplyDescriptionResetAsync()` will always ensure the
+      character reflects the passed in `Class.HumanoidDescription`.
 
       #### See Also
 
@@ -1415,24 +1374,21 @@ methods:
       - `Class.Players:GetHumanoidDescriptionFromUserIdAsync()` which returns a
         `Class.HumanoidDescription` describing the avatar for the passed in
         user.
-      - `Class.Players:GetHumanoidDescriptionFromOutfitIdAsync()` which returns
-        a `Class.HumanoidDescription` whose parameters are initialized to match
+      - `Class.Players:GetHumanoidDescriptionFromOutfitIdAsync()` which returns a
+        `Class.HumanoidDescription` whose parameters are initialized to match
         that of the passed in server-side outfit asset.
-      - `Class.Player:LoadCharacterWithHumanoidDescriptionAsync()` which spawns
-        a player with the look from the passed in `Class.HumanoidDescription`.
+      - `Class.Player:LoadCharacterWithHumanoidDescriptionAsync()` which spawns a
+        player with the look from the passed in `Class.HumanoidDescription`.
     code_samples: []
     parameters:
       - name: humanoidDescription
         type: HumanoidDescription
         default:
-        summary: |
-          The `Class.HumanoidDescription` instance which you want to set the
-          character to match.
+        summary: The `Class.HumanoidDescription` instance which you want to set the character to match.
       - name: assetTypeVerification
         type: AssetTypeVerification
         default: Default
-        summary: |
-          The asset type verification mode.
+        summary: The asset type verification mode.
     returns:
       - type: ()
         summary: ''
@@ -1444,7 +1400,7 @@ methods:
     capabilities:
       - AvatarAppearance
   - name: Humanoid:ApplyDescriptionReset
-    summary: |
+    summary: |-
       Makes the character's look match that of the passed in
       `Class.HumanoidDescription`, even after external changes.
     description: ''
@@ -1453,32 +1409,27 @@ methods:
       - name: humanoidDescription
         type: HumanoidDescription
         default:
-        summary: |
-          The `Class.HumanoidDescription` instance which you want to set the
-          character to match.
+        summary: The `Class.HumanoidDescription` instance which you want to set the character to match.
       - name: assetTypeVerification
         type: AssetTypeVerification
         default: Default
-        summary: |
-          The asset type verification mode.
+        summary: The asset type verification mode.
     returns:
       - type: ()
         summary: ''
     tags:
       - Yields
       - Deprecated
-    deprecation_message: |
-      This method has been superseded by
-      `Class.Humanoid:ApplyDescriptionResetAsync()|ApplyDescriptionResetAsync()`.
+    deprecation_message: This method has been superseded by `Class.Humanoid:ApplyDescriptionResetAsync()|ApplyDescriptionResetAsync()`.
     security: None
     thread_safety: Unsafe
     capabilities:
       - AvatarAppearance
   - name: Humanoid:ApplyDescriptionResetAsync
-    summary: |
+    summary: |-
       Makes the character's look match that of the passed in
       `Class.HumanoidDescription`, even after external changes.
-    description: |
+    description: |-
       This yielding method makes the character's look match that of the passed
       in `Class.HumanoidDescription`, even after external changes. A copy of the
       passed `Class.HumanoidDescription` is cached as the
@@ -1487,27 +1438,22 @@ methods:
       This method will always ensure the character reflects the passed in
       `Class.HumanoidDescription`, even if changes have been made to the
       character not using the `Class.HumanoidDescription` system (for example
-      not using
-      `Class.Humanoid:ApplyDescriptionResetAsync()|ApplyDescriptionResetAsync()`
-      or `Class.Humanoid:ApplyDescriptionAsync()|ApplyDescriptionAsync()`). This
-      is in contrast to
-      `Class.Humanoid:ApplyDescriptionAsync()|ApplyDescriptionAsync()` which is
-      optimized and may incorrectly apply a `Class.HumanoidDescription` if the
-      character has been changed by means other than through the
+      not using `Class.Humanoid:ApplyDescriptionResetAsync()|ApplyDescriptionResetAsync()`
+      or `Class.Humanoid:ApplyDescriptionAsync()|ApplyDescriptionAsync()`). This is in
+      contrast to `Class.Humanoid:ApplyDescriptionAsync()|ApplyDescriptionAsync()` which
+      is optimized and may incorrectly apply a `Class.HumanoidDescription` if
+      the character has been changed by means other than through the
       `Class.HumanoidDescription` system.
     code_samples: []
     parameters:
       - name: humanoidDescription
         type: HumanoidDescription
         default:
-        summary: |
-          The `Class.HumanoidDescription` instance which you want to set the
-          character to match.
+        summary: The `Class.HumanoidDescription` instance which you want to set the character to match.
       - name: assetTypeVerification
         type: AssetTypeVerification
         default: Default
-        summary: |
-          The asset type verification mode.
+        summary: The asset type verification mode.
     returns:
       - type: ()
         summary: ''
@@ -1519,10 +1465,10 @@ methods:
     capabilities:
       - AvatarAppearance
   - name: Humanoid:BuildRigFromAttachments
-    summary: |
+    summary: |-
       Assembles a tree of `Class.Motor6D` joints by attaching together
       `Class.Attachment` objects in a humanoid's character.
-    description: |
+    description: |-
       This method assembles a tree of `Class.Motor6D` joints for the
       `Class.Humanoid`. `Class.Motor6D` joints are required for the playback of
       `Class.Animation|Animations`.
@@ -1551,9 +1497,8 @@ methods:
     capabilities:
       - AvatarBehavior
   - name: Humanoid:ChangeState
-    summary: |
-      Sets the `Class.Humanoid` to enter the given `Enum.HumanoidStateType`.
-    description: |
+    summary: Sets the `Class.Humanoid` to enter the given `Enum.HumanoidStateType`.
+    description: |-
       This method causes the `Class.Humanoid` to enter the given
       `Enum.HumanoidStateType`, describing the activity the `Class.Humanoid` is
       currently doing.
@@ -1589,8 +1534,7 @@ methods:
       - name: state
         type: HumanoidStateType
         default: None
-        summary: |
-          The `Enum.HumanoidStateType` that the `Class.Humanoid` is to perform.
+        summary: The `Enum.HumanoidStateType` that the `Class.Humanoid` is to perform.
     returns:
       - type: ()
         summary: ''
@@ -1602,9 +1546,8 @@ methods:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid:EquipTool
-    summary: |
-      Makes the `Class.Humanoid` equip the given `Class.Tool`.
-    description: |
+    summary: Makes the `Class.Humanoid` equip the given `Class.Tool`.
+    description: |-
       This method makes the `Class.Humanoid` equip the given `Class.Tool`.
 
       When this method is called, the `Class.Humanoid` will first automatically
@@ -1620,8 +1563,7 @@ methods:
       - name: tool
         type: Instance
         default:
-        summary: |
-          The `Class.Tool` to equip.
+        summary: The `Class.Tool` to equip.
     returns:
       - type: ()
         summary: ''
@@ -1632,10 +1574,10 @@ methods:
     capabilities:
       - AvatarBehavior
   - name: Humanoid:GetAccessories
-    summary: |
+    summary: |-
       Returns an array of `Class.Accessory` objects that the humanoid's parent
       is currently wearing.
-    description: |
+    description: |-
       This method returns an array of `Class.Accessory` objects that the
       humanoid's parent is currently wearing. All such `Class.Accessory` objects
       will be included, regardless of whether they're attached or not.
@@ -1650,7 +1592,7 @@ methods:
     parameters: []
     returns:
       - type: Array
-        summary: |
+        summary: |-
           An array of `Class.Accessory` objects that are parented to the
           humanoid's parent.
     tags: []
@@ -1660,26 +1602,25 @@ methods:
     capabilities:
       - AvatarAppearance
   - name: Humanoid:GetAppliedDescription
-    summary: |
+    summary: |-
       Returns a copy of the humanoid's cached `Class.HumanoidDescription` which
       describes its current look.
-    description: |
+    description: |-
       This method returns a copy of the humanoid's cached
       `Class.HumanoidDescription` which describes its current look. This can be
       used to quickly determine a character's look and to assign their look to
-      other characters using the `Class.Humanoid:ApplyDescriptionAsync()`
-      method.
+      other characters using the `Class.Humanoid:ApplyDescriptionAsync()` method.
 
       #### See Also
 
       - `Class.Players:GetHumanoidDescriptionFromUserIdAsync()` which returns a
         `Class.HumanoidDescription` describing the avatar for the passed in
         user.
-      - `Class.Players:GetHumanoidDescriptionFromOutfitIdAsync()` which returns
-        a `Class.HumanoidDescription` whose parameters are initialized to match
+      - `Class.Players:GetHumanoidDescriptionFromOutfitIdAsync()` which returns a
+        `Class.HumanoidDescription` whose parameters are initialized to match
         that of the passed in server-side outfit asset.
-      - `Class.Player:LoadCharacterWithHumanoidDescriptionAsync()` which spawns
-        a player with the look from the passed in `Class.HumanoidDescription`.
+      - `Class.Player:LoadCharacterWithHumanoidDescriptionAsync()` which spawns a
+        player with the look from the passed in `Class.HumanoidDescription`.
     code_samples: []
     parameters: []
     returns:
@@ -1692,11 +1633,11 @@ methods:
     capabilities:
       - AvatarAppearance
   - name: Humanoid:GetBodyPartR15
-    summary: |
+    summary: |-
       Pass a body part to this method (the body part should be a sibling of
       Humanoid, and a child of a Model) to get the `Enum.BodyPartR15` of the
       `Class.Part`.
-    description: |
+    description: |-
       This method returns what `Enum.BodyPartR15` a `Class.Part` is, or
       `Enum.BodyPartR15.Unknown` if the part is not an R15 body part. This
       method allows developers to retrieve player body parts independent of what
@@ -1717,11 +1658,10 @@ methods:
       - name: part
         type: Instance
         default:
-        summary: |
-          The specified part being checked to see if it is an R15 body part.
+        summary: The specified part being checked to see if it is an R15 body part.
     returns:
       - type: BodyPartR15
-        summary: |
+        summary: |-
           The specified part's R15 body part type or unknown if the part is not
           a body part.
     tags: []
@@ -1731,10 +1671,10 @@ methods:
     capabilities:
       - AvatarBehavior
   - name: Humanoid:GetLimb
-    summary: |
+    summary: |-
       Returns the `Enum.Limb` enum that is associated with the given
       `Class.Part`.
-    description: |
+    description: |-
       This method returns the `Enum.Limb` enum that is associated with the given
       `Class.Part`. It works for both R15 and R6 rigs, for example:
 
@@ -1756,13 +1696,12 @@ methods:
       - name: part
         type: Instance
         default:
-        summary: |
+        summary: |-
           The `Class.Part` for which the `Enum.Limb|Enum.Limb` is to be
           retrieved.
     returns:
       - type: Limb
-        summary: |
-          The `Enum.Limb` the part corresponds with.
+        summary: The `Enum.Limb` the part corresponds with.
     tags: []
     deprecation_message: ''
     security: None
@@ -1784,10 +1723,10 @@ methods:
     capabilities:
       - AvatarBehavior
   - name: Humanoid:GetPlayingAnimationTracks
-    summary: |
+    summary: |-
       Returns an array of all `Class.AnimationTrack|AnimationTracks` that are
       currently being played on the `Class.Humanoid`.
-    description: |
+    description: |-
       This method returns an array of all `Class.AnimationTrack|AnimationTracks`
       that are currently being played on the `Class.Humanoid`. A typical use for
       this method is stopping currently playing tracks using
@@ -1801,8 +1740,7 @@ methods:
     parameters: []
     returns:
       - type: Array
-        summary: |
-          An array of currently playing `Class.AnimationTrack|AnimationTracks`.
+        summary: An array of currently playing `Class.AnimationTrack|AnimationTracks`.
     tags:
       - Deprecated
     deprecation_message: ''
@@ -1811,8 +1749,14 @@ methods:
     capabilities:
       - Animation
   - name: Humanoid:GetRelativeVelocityAtFloor
-    summary: ''
-    description: ''
+    summary: |
+      Returns the humanoid's actual physical velocity relative to the surface it
+      is standing on as a `Datatype.Vector3` in world-space orientation.
+    description: |
+      Returns the humanoid's actual physical velocity relative to the surface it
+      is standing on as a `Datatype.Vector3` in world-space orientation. This
+      accounts for moving platforms by subtracting floor velocity from the
+      humanoid's body velocity.
     code_samples: []
     parameters: []
     returns:
@@ -1826,9 +1770,8 @@ methods:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid:GetState
-    summary: |
-      Returns the humanoid's current `Enum.HumanoidStateType`.
-    description: |
+    summary: Returns the humanoid's current `Enum.HumanoidStateType`.
+    description: |-
       This method returns the humanoid's current `Enum.HumanoidStateType`,
       describing the activity the `Class.Humanoid` is currently doing, such as
       jumping or swimming.
@@ -1841,8 +1784,7 @@ methods:
     parameters: []
     returns:
       - type: HumanoidStateType
-        summary: |
-          The current `Enum.HumanoidStateType` of the `Class.Humanoid`.
+        summary: The current `Enum.HumanoidStateType` of the `Class.Humanoid`.
     tags: []
     deprecation_message: ''
     security: None
@@ -1851,10 +1793,10 @@ methods:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid:GetStateEnabled
-    summary: |
+    summary: |-
       Returns whether a `Enum.HumanoidStateType` is enabled for the
       `Class.Humanoid`.
-    description: |
+    description: |-
       The GetStateEnabled method returns whether a `Enum.HumanoidStateType` is
       enabled for the `Class.Humanoid`.
 
@@ -1877,12 +1819,10 @@ methods:
       - name: state
         type: HumanoidStateType
         default:
-        summary: |
-          The given `Enum.HumanoidStateType`.
+        summary: The given `Enum.HumanoidStateType`.
     returns:
       - type: boolean
-        summary: |
-          Whether the given `Enum.HumanoidStateType` is enabled.
+        summary: Whether the given `Enum.HumanoidStateType` is enabled.
     tags: []
     deprecation_message: ''
     security: None
@@ -1891,9 +1831,8 @@ methods:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid:GetStatuses
-    summary: |
-      Returns a table of the Humanoid's statuses, and custom statuses.
-    description: |
+    summary: Returns a table of the Humanoid's statuses, and custom statuses.
+    description: |-
       The GetStatuses method returns a table of the Humanoid's statuses, and
       custom statuses.
     code_samples: []
@@ -1903,7 +1842,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
@@ -1911,9 +1850,8 @@ methods:
     thread_safety: Unsafe
     capabilities: []
   - name: Humanoid:HasCustomStatus
-    summary: |
-      Returns boolean based on if custom statuses exist.
-    description: |
+    summary: Returns boolean based on if custom statuses exist.
+    description: |-
       The HasCustomStatus method returns boolean based on if custom statuses
       exist.
     code_samples: []
@@ -1927,7 +1865,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
@@ -1935,10 +1873,8 @@ methods:
     thread_safety: Unsafe
     capabilities: []
   - name: Humanoid:HasStatus
-    summary: |
-      Returns a boolean based on if a status exists.
-    description: |
-      The HasStatus method returns a boolean based on if a status exists.
+    summary: Returns a boolean based on if a status exists.
+    description: The HasStatus method returns a boolean based on if a status exists.
     code_samples: []
     parameters:
       - name: status
@@ -1950,7 +1886,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
@@ -1958,10 +1894,10 @@ methods:
     thread_safety: Unsafe
     capabilities: []
   - name: Humanoid:LoadAnimation
-    summary: |
+    summary: |-
       Loads an `Class.Animation` onto a `Class.Humanoid`, returning an
       `Class.AnimationTrack` that can be used for playback.
-    description: |
+    description: |-
       This method loads an `Class.Animation` onto a `Class.Humanoid`, returning
       an `Class.AnimationTrack` that can be used for playback.
     code_samples: []
@@ -1969,14 +1905,13 @@ methods:
       - name: animation
         type: Animation
         default:
-        summary: |
-          The `Class.Animation` to load.
+        summary: The `Class.Animation` to load.
     returns:
       - type: AnimationTrack
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This function is deprecated in favor of using
       `Class.Animator:LoadAnimation()` directly (the `Class.Animator` may be
       created while editing or at runtime).
@@ -1999,7 +1934,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This deprecated method is a variant of `Class.Humanoid:LoadAnimation()`.
       `Class.Animator:LoadAnimation()` should be used instead.
     security: None
@@ -2008,9 +1943,8 @@ methods:
       - Animation
     simulationAccess: true
   - name: Humanoid:Move
-    summary: |
-      Causes the `Class.Humanoid` to walk in the given direction.
-    description: |
+    summary: Causes the `Class.Humanoid` to walk in the given direction.
+    description: |-
       This method causes the `Class.Humanoid` to walk in the given
       `Datatype.Vector3` direction.
 
@@ -2044,12 +1978,11 @@ methods:
       - name: moveDirection
         type: Vector3
         default:
-        summary: |
-          The direction to walk in.
+        summary: The direction to walk in.
       - name: relativeToCamera
         type: boolean
         default: false
-        summary: |
+        summary: |-
           Set to `true` if the `moveDirection` parameter should be taken as
           relative to the `Class.Workspace.CurrentCamera|CurrentCamera`.
     returns:
@@ -2063,32 +1996,31 @@ methods:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid:MoveTo
-    summary: |
+    summary: |-
       Causes the `Class.Humanoid` to attempt to walk to the given location by
       setting the `Class.Humanoid.WalkToPoint` and `Class.Humanoid.WalkToPart`
       properties.
-    description: |
-      This method causes the `Class.Humanoid` to attempt to walk to a given
-      location by setting the `Class.Humanoid.WalkToPoint|WalkToPoint` and
+    description: |-
+      This method causes the `Class.Humanoid` to attempt to walk to a given location
+      by setting the `Class.Humanoid.WalkToPoint|WalkToPoint` and
       `Class.Humanoid.WalkToPart|WalkToPart` properties, corresponding to the
       `location` and `part` parameters.
 
-      If the `part` parameter is specified, the `Class.Humanoid` will still
-      attempt to walk to the `location` parameter's point. However, if the
-      `part` moves, the point will move to be at the same position **relative to
-      the part**.
+      If the `part` parameter is specified, the `Class.Humanoid` will still attempt to
+      walk to the `location` parameter's point. However, if the `part` moves, the
+      point will move to be at the same position **relative to the part**.
 
-      Note that the movement operation will time out after 8 seconds if the
-      humanoid doesn't reach its goal (this timeout exists so that humanoids do
-      not get stuck waiting for `Class.Humanoid.MoveToFinished|MoveToFinished`
-      to fire). If you don't want this to happen, call `MoveTo()` at a repeated
-      interval so that the timeout keeps resetting.
+      Note that the movement operation will time out after 8 seconds if the humanoid
+      doesn't reach its goal (this timeout exists so that humanoids do not get stuck
+      waiting for `Class.Humanoid.MoveToFinished|MoveToFinished` to fire). If you don't
+      want this to happen, call `MoveTo()` at a repeated interval so that the timeout
+      keeps resetting.
 
       `Class.Humanoid:MoveTo()|MoveTo()` ends if any of the following conditions
       apply:
 
-      - The character arrives at its destination, assuming a ~1 stud threshold
-        to account for various humanoid speeds and framerates.
+      - The character arrives at its destination, assuming a ~1 stud threshold to
+        account for various humanoid speeds and framerates.
 
       - The character gets stuck and the timer expires.
 
@@ -2098,21 +2030,19 @@ methods:
       - A script calls `Class.Humanoid:Move()|Move()` with a new `moveDirection`
         parameter.
 
-      - A script changes the `Class.BasePart.CFrame|CFrame` property of the
-        humanoid's `Class.Humanoid.RootPart|RootPart`.
+      - A script changes the `Class.BasePart.CFrame|CFrame` property of the humanoid's
+        `Class.Humanoid.RootPart|RootPart`.
     code_samples:
       - humanoid-moveto-without-time-out
     parameters:
       - name: location
         type: Vector3
         default:
-        summary: |
-          The position to set `Class.Humanoid.WalkToPoint` to.
+        summary: The position to set `Class.Humanoid.WalkToPoint` to.
       - name: part
         type: Instance
         default: nil
-        summary: |
-          The `Class.BasePart` to set `Class.Humanoid.WalkToPart` to.
+        summary: The `Class.BasePart` to set `Class.Humanoid.WalkToPart` to.
     returns:
       - type: ()
         summary: ''
@@ -2124,34 +2054,28 @@ methods:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid:PlayEmote
-    summary: |
-      Plays emotes and returns if was successfully ran.
+    summary: Plays emotes and returns if was successfully ran.
     description: ''
     code_samples: []
     parameters:
       - name: emoteName
         type: string
         default:
-        summary: |
-          name of the emote to play.
+        summary: name of the emote to play.
     returns:
       - type: boolean
-        summary: |
-          successfully played.
+        summary: successfully played.
     tags:
       - Yields
       - Deprecated
-    deprecation_message: |
-      This method has been superseded by
-      `Class.Humanoid:PlayEmoteAsync()|PlayEmoteAsync()`.
+    deprecation_message: This method has been superseded by `Class.Humanoid:PlayEmoteAsync()|PlayEmoteAsync()`.
     security: None
     thread_safety: Unsafe
     capabilities:
       - AvatarBehavior
   - name: Humanoid:PlayEmoteAsync
-    summary: |
-      Plays emotes and returns if was successfully ran.
-    description: |
+    summary: Plays emotes and returns if was successfully ran.
+    description: |-
       If the emote could not be played because the emoteName is not found in the
       HumanoidDescription, this method will give an error. The method will
       return true to indicate that the emote was played successfully.
@@ -2160,12 +2084,10 @@ methods:
       - name: emoteName
         type: string
         default:
-        summary: |
-          name of the emote to play.
+        summary: name of the emote to play.
     returns:
       - type: boolean
-        summary: |
-          successfully played.
+        summary: successfully played.
     tags:
       - Yields
     deprecation_message: ''
@@ -2174,9 +2096,8 @@ methods:
     capabilities:
       - AvatarBehavior
   - name: Humanoid:RemoveAccessories
-    summary: |
-      Removes all `Class.Accessory` objects worn by the humanoid's parent.
-    description: |
+    summary: Removes all `Class.Accessory` objects worn by the humanoid's parent.
+    description: |-
       This method removes all `Class.Accessory` objects worn by the humanoid's
       parent. For player `Class.Player.Character|Characters`, this will remove
       all hats and other accessories.
@@ -2202,9 +2123,8 @@ methods:
     capabilities:
       - AvatarAppearance
   - name: Humanoid:RemoveCustomStatus
-    summary: |
-      Removes the defined custom status from the Status model in the Humanoid..
-    description: |
+    summary: Removes the defined custom status from the Status model in the Humanoid..
+    description: |-
       The RemoveCustomStatus method removes the defined custom status from the
       Status model in the Humanoid..
     code_samples: []
@@ -2218,7 +2138,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
@@ -2226,9 +2146,8 @@ methods:
     thread_safety: Unsafe
     capabilities: []
   - name: Humanoid:RemoveStatus
-    summary: |
-      Removes the defined status from the Status model in the Humanoid.
-    description: |
+    summary: Removes the defined status from the Status model in the Humanoid.
+    description: |-
       The RemoveStatus method removes the defined status from the Status model
       in the Humanoid.
     code_samples: []
@@ -2242,7 +2161,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
@@ -2250,9 +2169,8 @@ methods:
     thread_safety: Unsafe
     capabilities: []
   - name: Humanoid:ReplaceBodyPartR15
-    summary: |
-      Dynamically replaces a Humanoid body part with a different part.
-    description: |
+    summary: Dynamically replaces a Humanoid body part with a different part.
+    description: |-
       Dynamically replaces a R15/Rthro limb part in a Humanoid with a different
       part. The part is automatically scaled as normal.
 
@@ -2268,12 +2186,11 @@ methods:
       - name: bodyPart
         type: BodyPartR15
         default:
-        summary: |
-          The body part to replace. `Enum.BodyPartR15.Unknown` will fail.
+        summary: The body part to replace. `Enum.BodyPartR15.Unknown` will fail.
       - name: part
         type: BasePart
         default:
-        summary: |
+        summary: |-
           The `Class.Part` `Class.Instance` which will be parented to the
           character.
     returns:
@@ -2286,10 +2203,10 @@ methods:
     capabilities:
       - AvatarAppearance
   - name: Humanoid:SetStateEnabled
-    summary: |
+    summary: |-
       Sets whether a given `Enum.HumanoidStateType` is enabled for the
       `Class.Humanoid`.
-    description: |
+    description: |-
       This method sets whether a given `Enum.HumanoidStateType` is enabled for
       the `Class.Humanoid`. When a particular `Enum.HumanoidStateType` is
       disabled, the `Class.Humanoid` can never enter that state. This is true
@@ -2304,12 +2221,11 @@ methods:
       - name: state
         type: HumanoidStateType
         default:
-        summary: |
-          The `Enum.HumanoidStateType` to be enabled or disabled.
+        summary: The `Enum.HumanoidStateType` to be enabled or disabled.
       - name: enabled
         type: boolean
         default:
-        summary: |
+        summary: |-
           `true` if `state` is to be enabled, `false` if `state` is to be
           disabled.
     returns:
@@ -2323,10 +2239,10 @@ methods:
       - AvatarBehavior
     simulationAccess: true
   - name: Humanoid:TakeDamage
-    summary: |
+    summary: |-
       Lowers the `Class.Humanoid.Health` of the `Class.Humanoid` by the given
       _amount_ if it is not protected by a `Class.ForceField`.
-    description: |
+    description: |-
       This method lowers the `Class.Humanoid.Health` of the `Class.Humanoid` by
       the given _amount_ if it is not protected by a `Class.ForceField`
 
@@ -2358,8 +2274,7 @@ methods:
       - name: amount
         type: float
         default:
-        summary: |
-          The damage, or amount to be deduced from the `Class.Humanoid.Health`.
+        summary: The damage, or amount to be deduced from the `Class.Humanoid.Health`.
     returns:
       - type: ()
         summary: ''
@@ -2383,7 +2298,7 @@ methods:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This deprecated method is a variant of `Class.Humanoid:TakeDamage()`,
       which should be used instead.
     security: None
@@ -2391,9 +2306,8 @@ methods:
     capabilities:
       - AvatarBehavior
   - name: Humanoid:UnequipTools
-    summary: |
-      Unequips any `Class.Tool` currently equipped by the `Class.Humanoid`.
-    description: |
+    summary: Unequips any `Class.Tool` currently equipped by the `Class.Humanoid`.
+    description: |-
       This method unequips any `Class.Tool` currently equipped by the
       `Class.Humanoid`. The unequipped `Class.Tool` will be parented to the
       `Class.Backpack` of the `Class.Player` associated with the
@@ -2420,10 +2334,10 @@ methods:
       - AvatarBehavior
 events:
   - name: Humanoid.AnimationPlayed
-    summary: |
+    summary: |-
       Fires when an `Class.AnimationTrack` begins playing on the
       `Class.Humanoid`.
-    description: |
+    description: |-
       The AnimationPlayed event fires when an `Class.AnimationTrack` begins
       playing on the `Class.Humanoid`.
 
@@ -2446,8 +2360,7 @@ events:
       - name: animationTrack
         type: AnimationTrack
         default:
-        summary: |
-          The `Class.AnimationTrack` that has begun playing.
+        summary: The `Class.AnimationTrack` that has begun playing.
     tags:
       - Deprecated
     deprecation_message: ''
@@ -2469,9 +2382,8 @@ events:
     capabilities:
       - AvatarAppearance
   - name: Humanoid.Climbing
-    summary: |
-      Fires when the speed at which a `Class.Humanoid` is climbing changes.
-    description: |
+    summary: Fires when the speed at which a `Class.Humanoid` is climbing changes.
+    description: |-
       Fires when the speed at which a `Class.Humanoid` is climbing changes.
 
       `Class.Humanoid|Humanoids` can climb up ladders made out of
@@ -2497,17 +2409,15 @@ events:
       - name: speed
         type: float
         default:
-        summary: |
-          The speed at which the `Class.Humanoid` is currently climbing.
+        summary: The speed at which the `Class.Humanoid` is currently climbing.
     tags: []
     deprecation_message: ''
     security: None
     capabilities:
       - AvatarBehavior
   - name: Humanoid.CustomStatusAdded
-    summary: |
-      Fired when a status is added to the Humanoid.
-    description: |
+    summary: Fired when a status is added to the Humanoid.
+    description: |-
       The CustomStatusAdded event fires when a status is added to the Humanoid
       via the `Class.Humanoid:AddCustomStatus()` method.
     code_samples: []
@@ -2518,16 +2428,15 @@ events:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
     security: None
     capabilities: []
   - name: Humanoid.CustomStatusRemoved
-    summary: |
-      Fired when a status is removed from the Humanoid.
-    description: |
+    summary: Fired when a status is removed from the Humanoid.
+    description: |-
       The CustomStatusRemoved event fires when a status is removed from the
       Humanoid via the `Class.Humanoid:RemoveCustomStatus()` method.
     code_samples: []
@@ -2538,16 +2447,15 @@ events:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
     security: None
     capabilities: []
   - name: Humanoid.Died
-    summary: |
-      Fires when the `Class.Humanoid` dies.
-    description: |
+    summary: Fires when the `Class.Humanoid` dies.
+    description: |-
       This event fires when the `Class.Humanoid` dies, usually when
       `Class.Humanoid.Health` reaches 0. This could be caused either by
       disconnecting their head from their `Class.Humanoid.Torso`, or directly
@@ -2565,10 +2473,10 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.FallingDown
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid` enters or leaves the `FallingDown`
       `Enum.HumanoidStateType`.
-    description: |
+    description: |-
       The FallingDown event fires when the `Class.Humanoid` enters and leaves
       the `FallingDown` `Enum.HumanoidStateType`.
 
@@ -2581,7 +2489,7 @@ events:
       - name: active
         type: boolean
         default:
-        summary: |
+        summary: |-
           Describes whether the `Class.Humanoid` is entering or leaving the
           `FallingDown` `Enum.HumanoidStateType`.
     tags: []
@@ -2590,10 +2498,10 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.FreeFalling
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid` enters or leaves the `Freefall`
       `Enum.HumanoidStateType`.
-    description: |
+    description: |-
       This event fires when the `Class.Humanoid` enters or leaves the `Freefall`
       `Enum.HumanoidStateType`.
 
@@ -2610,7 +2518,7 @@ events:
       - name: active
         type: boolean
         default:
-        summary: |
+        summary: |-
           Whether the `Class.Humanoid` is entering or leaving the `Freefall`
           `Enum.HumanoidStateType`.
     tags: []
@@ -2619,10 +2527,10 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.GettingUp
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid` enters or leaves the `GettingUp`
       `Enum.HumanoidStateType`.
-    description: |
+    description: |-
       This event fires when the `Class.Humanoid` enters or leaves the
       `Enum.HumanoidStateType.GettingUp` state, a transition state that is
       activated shortly after the `Class.Humanoid` enters the
@@ -2641,7 +2549,7 @@ events:
       - name: active
         type: boolean
         default:
-        summary: |
+        summary: |-
           Whether the `Class.Humanoid` is entering or leaving the `GettingUp`
           `Enum.HumanoidStateType`.
     tags: []
@@ -2650,10 +2558,10 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.HealthChanged
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid.Health` changes (or when the
       `Class.Humanoid.MaxHealth` is set).
-    description: |
+    description: |-
       This event fires when the `Class.Humanoid.Health` changes. However, it
       will not fire if the health is increasing from a value equal to or greater
       than the `Class.Humanoid.MaxHealth`.
@@ -2668,18 +2576,17 @@ events:
       - name: health
         type: float
         default:
-        summary: |
-          The new value of `Class.Humanoid.Health`.
+        summary: The new value of `Class.Humanoid.Health`.
     tags: []
     deprecation_message: ''
     security: None
     capabilities:
       - AvatarBehavior
   - name: Humanoid.Jumping
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid` enters and leaves the `Jumping`
       `Enum.HumanoidStateType`.
-    description: |
+    description: |-
       This event fires when the `Class.Humanoid` enters and leaves the `Jumping`
       `Enum.HumanoidStateType`.
 
@@ -2696,7 +2603,7 @@ events:
       - name: active
         type: boolean
         default:
-        summary: |
+        summary: |-
           Whether the `Class.Humanoid` is entering or leaving the `Jumping`
           `Enum.HumanoidStateType`.
     tags: []
@@ -2705,10 +2612,10 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.MoveToFinished
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid` finishes walking to a goal declared by
       `Class.Humanoid:MoveTo()`.
-    description: |
+    description: |-
       This event fires when the `Class.Humanoid` finishes walking to a goal
       declared by the `Class.Humanoid.WalkToPoint` and
       `Class.Humanoid.WalkToPart` properties.
@@ -2728,7 +2635,7 @@ events:
       - name: reached
         type: boolean
         default:
-        summary: |
+        summary: |-
           A boolean indicating whether the `Class.Humanoid` reached is goal.
           _True_ if the `Class.Humanoid` is reached its goal, _false_ if the
           walk timed out before the goal could be reached.
@@ -2738,10 +2645,10 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.PlatformStanding
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid` enters or leaves the `PlatformStanding`
       `Enum.HumanoidStateType`.
-    description: |
+    description: |-
       This event fires when the `Class.Humanoid` enters or leaves the
       `PlatformStanding` `Enum.HumanoidStateType`.
 
@@ -2760,7 +2667,7 @@ events:
       - name: active
         type: boolean
         default:
-        summary: |
+        summary: |-
           Whether the `Class.Humanoid` is entering or leaving the
           `PlatformStanding` `Enum.HumanoidStateType`.
     tags: []
@@ -2769,10 +2676,10 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.Ragdoll
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid` enters or leaves the `Ragdoll`
       `Enum.HumanoidStateType`.
-    description: |
+    description: |-
       This event fires when the `Class.Humanoid` enters or leaves the `Ragdoll`
       `Enum.HumanoidStateType`.
 
@@ -2791,7 +2698,7 @@ events:
       - name: active
         type: boolean
         default:
-        summary: |
+        summary: |-
           Whether the `Class.Humanoid` is entering or leaving the `Ragdoll`
           `Enum.HumanoidStateType`.
     tags: []
@@ -2800,9 +2707,8 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.Running
-    summary: |
-      Fires when the speed at which a `Class.Humanoid` is running changes.
-    description: |
+    summary: Fires when the speed at which a `Class.Humanoid` is running changes.
+    description: |-
       This event fires when the speed at which a `Class.Humanoid` is running
       changes.
 
@@ -2824,18 +2730,17 @@ events:
       - name: speed
         type: float
         default:
-        summary: |
-          The speed at which the `Class.Humanoid` is running.
+        summary: The speed at which the `Class.Humanoid` is running.
     tags: []
     deprecation_message: ''
     security: None
     capabilities:
       - AvatarBehavior
   - name: Humanoid.Seated
-    summary: |
+    summary: |-
       Fired when a `Class.Humanoid` either sits in a `Class.Seat` or
       `Class.VehicleSeat` or gets up.
-    description: |
+    description: |-
       This event fires when a `Class.Humanoid` either sits in or gets up from a
       `Class.Seat` or `Class.VehicleSeat`.
 
@@ -2860,22 +2765,19 @@ events:
       - name: active
         type: boolean
         default:
-        summary: |
-          True if the `Class.Humanoid` is sitting down.
+        summary: True if the `Class.Humanoid` is sitting down.
       - name: currentSeatPart
         type: BasePart
         default:
-        summary: |
-          The seat the `Class.Humanoid` is sat in if it is sitting down.
+        summary: The seat the `Class.Humanoid` is sat in if it is sitting down.
     tags: []
     deprecation_message: ''
     security: None
     capabilities:
       - AvatarBehavior
   - name: Humanoid.StateChanged
-    summary: |
-      Fires when the state of the `Class.Humanoid` is changed.
-    description: |
+    summary: Fires when the state of the `Class.Humanoid` is changed.
+    description: |-
       This event fires when the state of the `Class.Humanoid` is changed.
 
       As there is no "idle" humanoid state, you should instead use the
@@ -2897,23 +2799,21 @@ events:
       - name: old
         type: HumanoidStateType
         default:
-        summary: |
-          The humanoid's previous state type.
+        summary: The humanoid's previous state type.
       - name: new
         type: HumanoidStateType
         default:
-        summary: |
-          The humanoid's current state type.
+        summary: The humanoid's current state type.
     tags: []
     deprecation_message: ''
     security: None
     capabilities:
       - AvatarBehavior
   - name: Humanoid.StateEnabledChanged
-    summary: |
+    summary: |-
       Fires when `Class.Humanoid:SetStateEnabled()` is called on the
       `Class.Humanoid`.
-    description: |
+    description: |-
       The StateEnableChanged event fires when `Class.Humanoid:SetStateEnabled()`
       is called on the `Class.Humanoid`.
 
@@ -2932,24 +2832,21 @@ events:
       - name: state
         type: HumanoidStateType
         default:
-        summary: |
+        summary: |-
           The `Enum.HumanoidStateType` for which the enabled state has been
           changed.
       - name: isEnabled
         type: boolean
         default:
-        summary: |
-          True if the state is now enabled.
+        summary: True if the state is now enabled.
     tags: []
     deprecation_message: ''
     security: None
     capabilities:
       - AvatarBehavior
   - name: Humanoid.StatusAdded
-    summary: |
-      Fired when a status is added to the Humanoid.
-    description: |
-      The StatusAdded event fires when a status is added to the Humanoid.
+    summary: Fired when a status is added to the Humanoid.
+    description: The StatusAdded event fires when a status is added to the Humanoid.
     code_samples:
       - Humanoid-StatusAdded1
     parameters:
@@ -2959,17 +2856,15 @@ events:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
     security: None
     capabilities: []
   - name: Humanoid.StatusRemoved
-    summary: |
-      Fired when a status is removed from the Humanoid.
-    description: |
-      The StatusRemoved event fires when a status is removed from the Humanoid.
+    summary: Fired when a status is removed from the Humanoid.
+    description: The StatusRemoved event fires when a status is removed from the Humanoid.
     code_samples:
       - Humanoid-StatusRemoved1
     parameters:
@@ -2979,17 +2874,17 @@ events:
         summary: ''
     tags:
       - Deprecated
-    deprecation_message: |
+    deprecation_message: |-
       This item is deprecated, as it was a part of the unfinished RbxStatus
       library which would have allowed you to add conditions to a Humanoid. Do
       not use it for new work.
     security: None
     capabilities: []
   - name: Humanoid.Strafing
-    summary: |
+    summary: |-
       Fires when the `Class.Humanoid` enters or leaves the `StrafingNoPhysics`
       `Enum.HumanoidStateType`.
-    description: |
+    description: |-
       This event does not fire when the `Class.Humanoid` is strafing and should
       not be used by developers
 
@@ -3011,7 +2906,7 @@ events:
       - name: active
         type: boolean
         default:
-        summary: |
+        summary: |-
           Whether the `Class.Humanoid` is entering or leaving the
           `StrafingNoPhysics` `Enum.HumanoidStateType`.
     tags: []
@@ -3020,10 +2915,10 @@ events:
     capabilities:
       - AvatarBehavior
   - name: Humanoid.Swimming
-    summary: |
+    summary: |-
       Fires when the speed at which a `Class.Humanoid` is swimming in
       `Class.Terrain` water changes.
-    description: |
+    description: |-
       This event fires when the speed at which a `Class.Humanoid` is swimming in
       `Class.Terrain` water changes.
 
@@ -3046,18 +2941,17 @@ events:
       - name: speed
         type: float
         default:
-        summary: |
-          The speed the `Class.Humanoid` is currently swimming at.
+        summary: The speed the `Class.Humanoid` is currently swimming at.
     tags: []
     deprecation_message: ''
     security: None
     capabilities:
       - AvatarBehavior
   - name: Humanoid.Touched
-    summary: |
+    summary: |-
       Fires when one of the humanoid's limbs come in contact with another
       `Class.BasePart`.
-    description: |
+    description: |-
       This event fires when one of the humanoid's limbs comes in contact with
       another `Class.BasePart`. The `Class.BasePart` which the limb is touching,
       along with the limb itself, is given.
@@ -3093,13 +2987,11 @@ events:
       - name: touchingPart
         type: BasePart
         default:
-        summary: |
-          The `Class.BasePart` the `Class.Humanoid` has come in contact with.
+        summary: The `Class.BasePart` the `Class.Humanoid` has come in contact with.
       - name: humanoidPart
         type: BasePart
         default:
-        summary: |
-          The limb of the `Class.Humanoid` that has been touched.
+        summary: The limb of the `Class.Humanoid` that has been touched.
     tags: []
     deprecation_message: ''
     security: None
