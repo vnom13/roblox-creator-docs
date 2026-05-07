@@ -423,7 +423,7 @@ Style **transitions**, comparable to [CSS transitions](./css-comparisons.md#tran
 
 To tween many UI properties with the same parameters, you can set a default transition that applies to **all** properties unless another transition is explicitly set for a specific property.
 
-1. Select **TextButton** in the **UI&nbsp;Elements** branch and then, in the main panel, add three new **properties** with the following values:
+1. Select **TextButton** in the **UI&nbsp;Elements** branch and then, in the main panel, add three new properties with the following values:
 
    <table size="small">
 	 <thead>
@@ -523,7 +523,7 @@ To reuse transition behaviors across multiple rules, you can define **tokens** r
 
    <img src="../../assets/ui/ui-styling/SE-Transition-Rule-Tokens-Defined.png" width="400" alt="Tokens added to TokenSheet in Style Editor." />
 
-3. Select **TextButton** in the **UI&nbsp;Elements** branch and then, in the main panel, add three new **properties** with the following values:
+3. Select **TextButton** in the **UI&nbsp;Elements** branch and then, in the main panel, add three new properties with the following values:
 
    <table size="small">
 	 <thead>
