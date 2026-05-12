@@ -120,21 +120,96 @@ You can filter by the following metrics:
   </tr>
 </tbody></table>
 
-### Explore mode
+### Explore
 
-Use the **Explore** button on the top-right corner of the chart to switch to a single chart view. In this view, you can apply different filters and breakdowns to explore under-performing segments and areas of opportunity. If you are using [custom fields](./custom-fields.md), you can filter by additional unique dimensions unique to your experience.
+The **Explore** page lets you deep-dive into your data with custom visualizations. Use it to build charts from custom events or standard metrics, define formulas to calculate new metrics, overlay benchmarks and prior periods, and compare segments in custom tables. You can reach the Explore page from:
 
-<figure>
-   <img src="../../assets/analytics/analytics-dashboard/Explore-Mode.png" alt="Analytics chart with top-right corner annotated to indicate explore mode button" />
-<figcaption><center>To access Explore mode, click the Explore icon on the top right of the chart.</center></figcaption>
-</figure>
-
-<br />
+- The **Explore** tab in the **Analytics** left navigation.
+- The **Explore** button on the top-right corner of any chart on the dashboard.
+- A benchmark scorecard on the **Overview** page.
 
 <figure>
-   <img src="../../assets/analytics/analytics-dashboard/Explore-Mode-Preview.png" alt="Analytics chart with additional dropdowns and filters." />
-<figcaption><center>Explore mode provides additional filters and breakdowns to further analyze and compare data points.</center></figcaption>
+   <img src="../../assets/analytics/analytics-dashboard/Explore-Page.png" alt="The Explore page showing the Configure chart panel on the left and a line chart on the right." />
+<figcaption><center>The Explore page provides a configuration panel and a single chart for focused analysis.</center></figcaption>
 </figure>
+
+#### Configure a chart
+
+The **Configure chart** panel controls what the chart plots. Choose a **Source** (for example, Engagement or a custom event) and a **Metric**, then refine with:
+
+- **Time interval** — Days, weeks, or cumulative.
+- **Breakdown by** — Split the chart by a segment such as platform, age group, or [custom field](./custom-fields.md).
+- **Filter by** — Narrow the data to specific segment values.
+
+If you are using [custom fields](./custom-fields.md), you can filter and break down custom metrics by dimensions unique to your experience.
+
+#### Chart types
+
+Pick the chart type that best fits the question you're asking:
+
+<table>
+<thead>
+  <tr><th>Type</th><th>Best for</th></tr>
+</thead>
+<tbody>
+  <tr><td>Line</td><td>Trends over time — how a metric fluctuates day to day.</td></tr>
+  <tr><td>Horizontal bar</td><td>Comparing performance across breakdown values, such as cumulative playtime by platform.</td></tr>
+  <tr><td>Stacked column</td><td>Composition — how parts make up a whole, like total kills by weapon type.</td></tr>
+  <tr><td>Pie</td><td>Distribution — a quick snapshot of how a total splits across segments.</td></tr>
+  <tr><td>Table</td><td>Snapshots of multiple metrics side-by-side across breakdowns.</td></tr>
+</tbody>
+</table>
+
+<Alert severity="info">
+Stacked column and pie charts aren't available for averages or ratios.
+</Alert>
+
+#### Calculated metrics
+
+Toggle **Use operations** in the **Configure chart** panel to build metrics from multiple inputs using math operators.
+
+1. **Define your variables** — Add the metrics or custom events you want to combine (`Metric A`, `Metric B`, and so on).
+2. **Define your formula** — Combine them with `+`, `-`, `*`, `/`, and constants, for example `(A / B) * 100`.
+
+Common use cases:
+
+- **Win rate** — `RoundWins / RoundsPlayed` to see how difficulty changes over time.
+- **Economy health** — `CurrencySources - CurrencySinks` to monitor inflation in real time.
+- **Engagement ratios** — `EquippedWeapon / TotalPlayers` to understand feature adoption.
+
+<figure>
+   <img src="../../assets/analytics/analytics-dashboard/Explore-Calculated-Metrics.png" alt="The Configure chart panel with Use operations enabled, showing two metrics and a formula of (A / B) * 100 labeled Win rate." />
+<figcaption><center>Build calculated metrics by combining custom events and standard metrics with math operators.</center></figcaption>
+</figure>
+
+#### Custom tables
+
+Choose the **Table** chart type to view multiple metrics together. Tables support:
+
+- **Row breakdowns** — Group rows by date (daily, weekly, cumulative) or by a segment such as platform, age, or spender status.
+- **Additional metric columns** — Add more metrics to see a snapshot of performance across different breakdowns. Each metric should support the breakdown applied to the table.
+
+<figure>
+   <img src="../../assets/analytics/analytics-dashboard/Explore-Custom-Table.png" alt="The Explore page in table mode showing daily active users, average playtime, and revenue broken down by platform." />
+<figcaption><center>Custom tables let you compare several metrics across a breakdown in a single view.</center></figcaption>
+</figure>
+
+#### Overlays and smoothing
+
+Use **Overlays** and **Smoothing** to understand how your metrics are trending:
+
+- **Benchmarks** — Overlay the benchmark for your experience alongside your own data. See [Benchmarking](#benchmarking) for how benchmarks are selected.
+- **Period-over-period** — Plot a prior time window on the same chart to compare against recent performance. Choose the offset (for example, a 28-day offset).
+- **7-day moving average** — Apply smoothing to remove weekly seasonality and surface the underlying trend.
+
+<figure>
+   <img src="../../assets/analytics/analytics-dashboard/Explore-Overlays-Smoothing.png" alt="The Overlays and Smoothing controls in the Configure chart panel, with Period-over-period selected at a 28-day offset and L7 moving average enabled." />
+<figcaption><center>Combine overlays and smoothing to compare periods and see the underlying trend.</center></figcaption>
+</figure>
+
+#### Share a chart
+
+Once you've configured a chart, the URL reflects your selections. Bookmark it for later or share it with teammates to open the same view.
 
 ### Export a chart
 
@@ -283,13 +358,11 @@ On the `.csv` sales data sheet, each sold item has the following attributes and 
 | Buyer User ID      | User ID of the user who purchased the item.                                                                                                                                                                             | `123456789`                           |
 | Sale Date and Time | Date and time of the transaction in UTC.                                                                                                                                                                                | `2022-07-15T19:04:30.397Z`            |
 | Sale Location      | The location in which the user bought the item, such as an experience and the Marketplace.                                                                                                                              | `WebSite`, `Marketplace`, `Game`      |
-| Universe ID        | The unique identifier of the experience that the purchased item belongs to. Only applicable for items that belong to an experience, like a  pass.                                                                   | `987654321`                           |
-| Universe           | The name of the experience that the purchased item belongs to. Only applicable for items that belong to an experience, like a pass.                                                                                | `My Awesome Experience`               |
+| Universe ID        | The unique identifier of the experience that the purchased item belongs to. Only applicable for items that belong to an experience, like a pass.                                                                        | `987654321`                           |
+| Universe           | The name of the experience that the purchased item belongs to. Only applicable for items that belong to an experience, like a pass.                                                                                     | `My Awesome Experience`               |
 | Asset ID           | The unique identifier of the item.                                                                                                                                                                                      | `234565432`                           |
 | Asset Name         | The name of the item.                                                                                                                                                                                                   | `My Avatar Shirt`, `My Server`        |
 | Asset Type         | The type of the item, which can be a [Roblox asset type](../../projects/assets/index.md#asset-types) or a [developer product](../../production/monetization/developer-products.md) type.                                | `Game Pass`, `Private Server`, `Mesh` |
 | Hold Status        | The status of whether Robux from this sale have been released to you or are still in a hold.                                                                                                                            | `Released`, `Held`, `Cancelled`       |
 | Revenue            | The amount of Robux you receive for the purchase, which is the item listing price excluding any [Marketplace fees](../../marketplace/marketplace-fees-and-commissions.md), Affiliate Fees, and Recurring Group Payouts. | `50`                                  |
 | Price              | The item listing price, which is the amount of Robux that the buyer paid for the purchase.                                                                                                                              | `10`                                  |
-
-[^1]: Daily Engagement Rewards have additional eligibility requirements; the number of players with a Platform Spender Status of active is always greater than or equal to the number of rewarded active spenders.

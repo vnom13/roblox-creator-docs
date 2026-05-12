@@ -9,11 +9,11 @@ description: Custom Events let you track and aggregate unique metrics to your ex
 - **User behavior** — What is the most frequently used ability on each map?
 - **Core loop** — How do kill/death ratios compare across different weapons?
 
-Once your experience begins tracking custom events, you'll unlock the Custom page of the Analytics dashboard on the Creator Hub. You can add up to 100 custom events to your experience.
+Once your experience begins tracking custom events, you'll unlock the **Explore** page of the Analytics dashboard on the Creator Hub. You can add up to 100 custom events to your experience.
 
 ## Track custom events
 
-To unlock the Custom Events dashboard, you must first track custom events in your experience. Start by identifying which metrics are the most important for monitoring and improving your experience. Events are aggregated daily so it may take up to 24 hours for charts to populate on the page.
+To unlock the **Explore** page, you must first track custom events in your experience. Start by identifying which metrics are the most important for monitoring and improving your experience. Events are aggregated daily so it may take up to 24 hours for charts to populate on the page.
 
 <Alert severity ='warning'>
 Events can only be sent from the server and in published experiences. Events can't be sent from the client or Studio.
@@ -60,7 +60,7 @@ All events metrics include the following aggregations and include slice-and-dici
 - Max value
 - Average value per user
 
-View your event aggregations in the Custom page by selecting the aggregation type.
+View your event aggregations on the **Explore** page by selecting the aggregation type.
 
 <img src="../../assets/analytics/event-types/Custom-Event-Aggregations.png" width = "40%" alt="A list of all the different aggregation options to filter your custom event data."/>
 

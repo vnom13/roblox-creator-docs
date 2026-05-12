@@ -34,7 +34,7 @@ export const sections = [
       {
         title: "View metrics and performance",
         description: "Measure and gain insight into your experience's performance to adjust content strategies. View dashboards on retention, engagement, acquisition, and monetization.",
-        image: "/assets/analytics/analytics-dashboard/Explore-Mode-Preview.png",
+        image: "/assets/analytics/analytics-dashboard/Explore-Page.png",
         links: [
           { text: "Core metrics", href: "./production/analytics/analytics-dashboard" },
           { text: "Performance", href: "./production/analytics/performance" }
