@@ -400,7 +400,7 @@ If your experience is a social hangout, you must specify if it includes private 
 - They are designed for activities that are personal and secluded, such as sleeping, changing clothes, or bathing.
 - They are designed for one person or for a very small number of people, such as a bathroom stall, bedroom, or small tent.
 
-If your experience is a social hangout that includes private spaces, you must disclose it within the Maturity & Compliance Questionnaire. Social hangouts without private spaces are only available to players that are at least 13 years old, and social hangouts with private spaces are only available to age-verified players that are at least 18 years old.
+If your experience is a social hangout that includes private spaces, you must disclose it within the Maturity & Compliance Questionnaire. Social hangouts without private spaces are only available to players that are at least 16 years old, and social hangouts with private spaces are only available to age-verified players that are at least 18 years old.
 
 ### Free-form user creation
 
@@ -408,7 +408,7 @@ If your experience is a social hangout that includes private spaces, you must di
 
 Free-form user creation are features that allow players to create anything within an experience, such as writing words or making illustrations on a chalkboard. While this applies to in-experience, free-form drawing or creation tools, it does not apply to in-experience creations that players assemble with 3D assets, such as building a house or creating an outfit, or anything that goes through Roblox moderation before it's published or replicated.
 
-If your experience includes free-form user creation features, you must disclose it within the Maturity & Compliance Questionnaire. Free-form user creation is only available to players that are at least 13 years old.
+If your experience includes free-form user creation features, you must disclose it within the Maturity & Compliance Questionnaire. Free-form user creation is only available to players that are at least 16 years old.
 
 ### Sensitive issues
 
@@ -423,7 +423,7 @@ Sensitive issues are frequently in the news and inspire strong opinions and deba
 
 If your experience includes content related to a sensitive issue or people implicated by them, but it isn't primarily themed on that issue, such as a religious building in a city, guns in a first-person shooter experience, or a national holiday parade in a hangout experience, you do **not** need to disclose it within the Maturity & Compliance Questionnaire.
 
-However, if the **majority of the content or gameplay of your experience** refers to a sensitive issue, you must disclose it within the Maturity & Compliance Questionnaire. Experiences with a primary theme of a sensitive issue are only available to players who are at least 13 years old, but they aren't recommended and discoverable unless the players have age-verified themselves. Parents can [manually allow access](https://en.help.roblox.com/hc/en-us/articles/30428310121620-Parental-Controls-Overview) to these experiences, regardless of their childs's age.
+However, if the **majority of the content or gameplay of your experience** refers to a sensitive issue, you must disclose it within the Maturity & Compliance Questionnaire. Experiences with a primary theme of a sensitive issue are only available to players who are at least 16 years old, but they aren't recommended and discoverable unless the players have age-verified themselves. Parents can [manually allow access](https://en.help.roblox.com/hc/en-us/articles/30428310121620-Parental-Controls-Overview) to these experiences, regardless of their childs's age.
 
 <Alert severity="info">
 Individual assets, as well as text and voice chat, do not qualify for this descriptor.
